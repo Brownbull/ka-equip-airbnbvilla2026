@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerradura Inteligente — Check-in Autonomo Airbnb</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: false, theme: 'neutral' });</script>
+</head>
+<body>
+
+  <header class="document-header">
+    <div class="doc-meta">
+      <button class="nav-toggle no-print" id="nav-toggle" aria-label="Menú de navegación" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <a href="../../index.html" class="doc-title">Equipamiento Airbnb — Depto Villarrica</a>
+      <span class="doc-badge">CONFIDENCIAL</span>
+    </div>
+    <div class="doc-actions">
+      <button class="print-btn no-print" onclick="window.print()" title="PDF">PDF</button>
+      <button class="pii-load-btn no-print" id="pii-load-btn" title="Cargar pii-manifest.json">Revelar datos</button>
+      <span class="pii-status no-print" id="pii-status"></span>
+    </div>
+  </header>
+
+  <div class="document-layout">
+
+    <nav class="section-nav no-print">
+      <ul>
+<li class="section-title">El Caso</li>
+<ul>
+<li><a href="../../99_entregable/el-caso/RESUMEN.html">El Caso</a></li>
+</ul>
+<li class="section-title">Investigación</li>
+<ul>
+<li><a href="../../99_entregable/investigacion/CALEFACCION.html">Calefaccion</a></li>
+<li><a href="../../99_entregable/investigacion/CERRADURA-INTELIGENTE.html">Cerradura Inteligente</a></li>
+<li><a href="../../99_entregable/investigacion/PRECIOS-REALES.html">Investigacion de Precios Reales</a></li>
+</ul>
+<li class="section-title">Plan</li>
+<ul>
+<li><a href="../../99_entregable/plan/PLAN-POR-ZONAS.html">Plan de Equipamiento por Zonas</a></li>
+</ul>
+<li class="section-title">Presupuesto</li>
+<ul>
+<li><a href="../../99_entregable/presupuesto/PRESUPUESTO-IKEA.html">Presupuesto V2</a></li>
+</ul>
+<li class="section-title">Revisión</li>
+<ul>
+<li><a href="../../99_entregable/revision/ROAST.html">Roast</a></li>
+</ul>
+</ul>
+    </nav>
+
+    <div class="nav-backdrop no-print" id="nav-backdrop"></div>
+
+    <main class="document-content">
+      <div class="disclaimer-bar no-print">
+        Documento orientativo, no vinculante. Elaborado con apoyo de IA. Consulte abogado habilitado.
+      </div>
+      <h1 id="cerradura-inteligente-check-in-autonomo-airbnb">Cerradura Inteligente — Check-in Autonomo Airbnb</h1>
+<blockquote>
+<p>Para operacion Airbnb sin recepcion presencial, una cerradura inteligente
+que permita generar codigos temporales para cada huesped es esencial.</p>
+</blockquote>
+<hr>
+<h2 id="comparativa-de-opciones">Comparativa de Opciones</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Caracteristica</th>
+<th><a href="https://www.fersontec.cl/cerradura-inteligente-wifi-huellaclavetarjeta-zeylink">Zeylink WiFi</a></th>
+<th><a href="https://www.automatizate.cl/products/cerradura-inteligente-para-airbnb-y-hoteles-wifi-h2b">A1H Bluetooth + Gateway</a></th>
+<th><a href="https://mysmartdoor.cl/cerradura-digital-msdx5-ttlock">MSDX5 TTLock</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Precio</strong></td>
+<td><strong>$139.990</strong></td>
+<td>$175.990 + <a href="https://www.automatizate.cl/products/gateway">$65.438 gateway</a> = <strong>$241.428</strong></td>
+<td>$199.000 (agotado)</td>
+</tr>
+<tr>
+<td><strong>Conectividad</strong></td>
+<td>WiFi 2.4GHz directo</td>
+<td>Bluetooth → <a href="https://www.automatizate.cl/products/gateway">Gateway G2</a> → WiFi</td>
+<td>Bluetooth (gateway separado)</td>
+</tr>
+<tr>
+<td><strong>App</strong></td>
+<td>Tuya / SmartLife</td>
+<td>TTLock</td>
+<td>TTLock</td>
+</tr>
+<tr>
+<td><strong>Gateway necesario</strong></td>
+<td><strong>NO</strong></td>
+<td>SI ($65.438)</td>
+<td>SI</td>
+</tr>
+<tr>
+<td><strong>Codigos temporales</strong></td>
+<td>Si, via app</td>
+<td>Si, via TTLock</td>
+<td>Si, via TTLock</td>
+</tr>
+<tr>
+<td><strong>Huella dactilar</strong></td>
+<td>Si (50 usuarios, 0.3 seg)</td>
+<td>Si</td>
+<td>Si (0.3 seg)</td>
+</tr>
+<tr>
+<td><strong>PIN numerico</strong></td>
+<td>Si (20 codigos)</td>
+<td>Si</td>
+<td>Si</td>
+</tr>
+<tr>
+<td><strong>Tarjeta NFC</strong></td>
+<td>Si (50 usuarios)</td>
+<td>Si (RFID)</td>
+<td>Si</td>
+</tr>
+<tr>
+<td><strong>Llave fisica</strong></td>
+<td>Si (backup)</td>
+<td>Si (backup)</td>
+<td>Si (backup)</td>
+</tr>
+<tr>
+<td><strong>Integracion Airbnb</strong></td>
+<td>Indirecta (Tuya → terceros)</td>
+<td><strong>Directa</strong> (TTLock plugin nativo)</td>
+<td>Directa (TTLock)</td>
+</tr>
+<tr>
+<td><strong>Pilas</strong></td>
+<td>4x AAA</td>
+<td>4x AA (~1 ano)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Grosor puerta</strong></td>
+<td>40-100mm</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Seguridad</strong></td>
+<td>Alarma antirrobo, bloqueo 5 intentos</td>
+<td>—</td>
+<td>Asistente voz integrado</td>
+</tr>
+<tr>
+<td><strong>Disponibilidad</strong></td>
+<td><strong>Disponible</strong></td>
+<td><strong>Disponible</strong></td>
+<td><strong>Agotado</strong></td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="analisis-de-trade-offs">Analisis de Trade-offs</h2>
+<h3 id="opcion-a-zeylink-wifi-139990">Opcion A: Zeylink WiFi — $139.990</h3>
+<p><strong>A favor:</strong>
+- $101K mas barato que TTLock
+- WiFi directo = sin gateway, sin punto extra de falla
+- App Tuya = mismo ecosistema que calefactores Kendal
+- Un solo dispositivo que mantener</p>
+<p><strong>En contra:</strong>
+- Depende 100% del WiFi del depto (si internet cae, solo acceso local)
+- Tuya menos probado en hoteleria que TTLock
+- Integracion Airbnb no es nativa (requiere automatizacion via terceros)</p>
+<h3 id="opcion-b-a1h-gateway-ttlock-241428">Opcion B: A1H + Gateway TTLock — $241.428</h3>
+<p><strong>A favor:</strong>
+- TTLock es el estandar de la industria hotelera
+- Integracion nativa con plataforma Airbnb
+- Bluetooth funciona sin WiFi (acceso local siempre disponible)
+- Gateway permite control remoto + historial en nube</p>
+<p><strong>En contra:</strong>
+- $101K mas caro
+- Gateway es un segundo dispositivo que puede fallar
+- Dos puntos de falla (cerradura + gateway) vs uno</p>
+<hr>
+<h2 id="recomendacion">Recomendacion</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Si priorizas...</th>
+<th>Elige...</th>
+<th>Precio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Precio y simplicidad</strong></td>
+<td><a href="https://www.fersontec.cl/cerradura-inteligente-wifi-huellaclavetarjeta-zeylink">Zeylink WiFi</a></td>
+<td>$139.990</td>
+</tr>
+<tr>
+<td><strong>Ecosistema hotelero + integracion Airbnb</strong></td>
+<td><a href="https://www.automatizate.cl/products/cerradura-inteligente-para-airbnb-y-hoteles-wifi-h2b">A1H</a> + <a href="https://www.automatizate.cl/products/gateway">Gateway G2</a></td>
+<td>$241.428</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>IMPORTANTE:</strong> Verificar grosor de la puerta del depto ANTES de comprar. La Zeylink soporta 40-100mm.</p>
+<p><strong>DEPENDENCIA CRITICA:</strong> La cerradura WiFi necesita internet funcionando. Contratar internet ANTES de instalar la cerradura. Dejar una llave fisica de respaldo en bodega B26 para emergencias.</p>
+    </main>
+
+    <aside class="jump-bar no-print">
+      <h4>En esta pagina</h4>
+      <ul class="jump-list">
+<li><a href="#comparativa-de-opciones">Comparativa de Opciones</a></li>
+<li><a href="#analisis-de-trade-offs">Analisis de Trade-offs</a></li>
+<li><a href="#recomendacion">Recomendacion</a></li>
+</ul>
+    </aside>
+
+  </div>
+
+  <footer class="document-footer no-print">
+    Contenido generado con apoyo de IA — orientativo, no vinculante.
+  </footer>
+
+  <script>
+    /* ── Active link in section-nav ──────────────────────────────────────── */
+    (function() {
+      var current = window.location.href.split('?')[0].split('#')[0];
+      document.querySelectorAll('.section-nav a').forEach(function(link) {
+        if (link.href.split('?')[0].split('#')[0] === current)
+          link.classList.add('active');
+      });
+    })();
+
+    /* ── PII manifest.json loader ────────────────────────────────────────── */
+    (function() {
+      var btn = document.getElementById('pii-load-btn');
+      var status = document.getElementById('pii-status');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json,application/json';
+        input.onchange = function(e) {
+          var file = e.target.files[0];
+          if (!file) return;
+          var reader = new FileReader();
+          reader.onload = function(ev) {
+            try {
+              var manifest = JSON.parse(ev.target.result);
+              var spans = document.querySelectorAll('.pii-redacted');
+              var count = 0;
+              spans.forEach(function(span) {
+                var token = span.getAttribute('data-token');
+                if (manifest[token]) {
+                  span.textContent = manifest[token];
+                  span.classList.remove('pii-redacted');
+                  span.classList.add('pii-revealed');
+                  count++;
+                }
+              });
+              if (count > 0) {
+                btn.textContent = 'Datos revelados (' + count + ')';
+                btn.classList.add('pii-loaded');
+                if (status) status.textContent = '';
+              } else {
+                if (status) status.textContent = 'Sin datos en esta pagina';
+              }
+            } catch(err) {
+              if (status) status.textContent = 'Error: JSON invalido';
+            }
+          };
+          reader.readAsText(file);
+        };
+        input.click();
+      });
+    })();
+
+    /* ── Mermaid render ──────────────────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      if (document.querySelector('.mermaid')) {
+        mermaid.run({ querySelector: '.mermaid' });
+      }
+    });
+
+    /* ── Mermaid fullscreen (click to zoom + drag) ─────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var overlay = document.createElement('div');
+      overlay.className = 'mermaid-overlay';
+      overlay.innerHTML = '<button class="close-overlay no-print">&times;</button><div class="mermaid-inner"></div>';
+      document.body.appendChild(overlay);
+
+      var inner = overlay.querySelector('.mermaid-inner');
+      var closeBtn = overlay.querySelector('.close-overlay');
+      var scale = 1, posX = 0, posY = 0, startX, startY, isDragging = false;
+
+      function updateTransform() {
+        inner.style.transform = 'translate(' + posX + 'px,' + posY + 'px) scale(' + scale + ')';
+      }
+
+      function openOverlay(svg) {
+        inner.innerHTML = '';
+        var clone = svg.cloneNode(true);
+        clone.style.maxWidth = 'none';
+        clone.style.maxHeight = 'none';
+        inner.appendChild(clone);
+        scale = 1; posX = 0; posY = 0;
+        updateTransform();
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeOverlay() {
+        overlay.classList.remove('active');
+        overlay.classList.remove('dragging');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeOverlay);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeOverlay();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) closeOverlay();
+      });
+
+      // Click on mermaid to open
+      document.addEventListener('click', function(e) {
+        var merm = e.target.closest('.mermaid');
+        if (!merm || overlay.classList.contains('active')) return;
+        var svg = merm.querySelector('svg');
+        if (svg) openOverlay(svg);
+      });
+
+      // Drag (mouse)
+      overlay.addEventListener('mousedown', function(e) {
+        if (e.target === closeBtn) return;
+        isDragging = true;
+        startX = e.clientX - posX;
+        startY = e.clientY - posY;
+        overlay.classList.add('dragging');
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        posX = e.clientX - startX;
+        posY = e.clientY - startY;
+        updateTransform();
+      });
+      document.addEventListener('mouseup', function() {
+        isDragging = false;
+        overlay.classList.remove('dragging');
+      });
+
+      // Drag (touch)
+      var lastTouchDist = 0;
+      overlay.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 1) {
+          isDragging = true;
+          startX = e.touches[0].clientX - posX;
+          startY = e.touches[0].clientY - posY;
+        } else if (e.touches.length === 2) {
+          isDragging = false;
+          lastTouchDist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+        }
+      }, { passive: true });
+      overlay.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 1 && isDragging) {
+          posX = e.touches[0].clientX - startX;
+          posY = e.touches[0].clientY - startY;
+          updateTransform();
+        } else if (e.touches.length === 2) {
+          var dist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          if (lastTouchDist > 0) {
+            scale = Math.max(0.5, Math.min(5, scale * (dist / lastTouchDist)));
+            updateTransform();
+          }
+          lastTouchDist = dist;
+        }
+      }, { passive: true });
+      overlay.addEventListener('touchend', function() {
+        isDragging = false;
+        lastTouchDist = 0;
+      });
+
+      // Zoom (scroll wheel)
+      overlay.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        var delta = e.deltaY > 0 ? 0.9 : 1.1;
+        scale = Math.max(0.5, Math.min(5, scale * delta));
+        updateTransform();
+      }, { passive: false });
+    });
+
+    /* ── Jump bar scroll tracking ────────────────────────────────────────── */
+    (function() {
+      var jumpLinks = document.querySelectorAll('.jump-list a');
+      if (!jumpLinks.length) return;
+
+      var headings = [];
+      jumpLinks.forEach(function(link) {
+        var id = link.getAttribute('href');
+        if (id && id.startsWith('#')) {
+          var el = document.getElementById(id.substring(1));
+          if (el) headings.push({ el: el, link: link });
+        }
+      });
+
+      if (!headings.length || !window.IntersectionObserver) return;
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            jumpLinks.forEach(function(link) {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, { rootMargin: '-20% 0px -60% 0px' });
+
+      headings.forEach(function(h) { observer.observe(h.el); });
+    })();
+
+    /* ── Score ring count-up + fill (for PANEL.md) ───────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.score-ring').forEach(function(ring) {
+        var numEl = ring.querySelector('.number[data-target]');
+        if (!numEl) return;
+        var target = parseInt(numEl.getAttribute('data-target'), 10);
+        var fillCircle = ring.querySelector('circle.fill');
+
+        if (fillCircle) {
+          var r = parseFloat(fillCircle.getAttribute('r') || '44');
+          var circumference = 2 * Math.PI * r;
+          fillCircle.style.strokeDasharray = String(circumference);
+          fillCircle.style.strokeDashoffset = String(circumference);
+          setTimeout(function() {
+            fillCircle.style.strokeDashoffset = String(circumference * (1 - target / 100));
+          }, 150);
+        }
+
+        var duration = 1200;
+        var startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          var progress = Math.min((ts - startTime) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          numEl.textContent = Math.round(target * eased);
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    });
+
+    /* ── Sidebar accordion ───────────────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var titles = document.querySelectorAll('.section-nav li.section-title');
+      titles.forEach(function(title) {
+        var ul = title.nextElementSibling;
+        if (!ul || ul.tagName !== 'UL') return;
+
+        var icon = document.createElement('span');
+        icon.className = 'section-toggle-icon';
+        icon.textContent = '+';
+        title.appendChild(icon);
+
+        ul.style.display = 'none';
+
+        function toggle() {
+          var open = ul.style.display !== 'none';
+          ul.style.display = open ? 'none' : '';
+          icon.textContent = open ? '+' : '-';
+        }
+        title.addEventListener('click', toggle);
+      });
+
+      var activeLink = document.querySelector('.section-nav a.active');
+      if (activeLink) {
+        var el = activeLink.parentElement;
+        var nav = document.querySelector('.section-nav');
+        while (el && el !== nav) {
+          if (el.tagName === 'UL' && el.parentElement !== nav) {
+            el.style.display = '';
+            var prev = el.previousElementSibling;
+            if (prev && prev.classList.contains('section-title')) {
+              var icon = prev.querySelector('.section-toggle-icon');
+              if (icon) icon.textContent = '-';
+            }
+          }
+          el = el.parentElement;
+        }
+      }
+    });
+
+    /* ── Mobile drawer toggle ──────────────────────────────────────────── */
+    (function() {
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.querySelector('.section-nav');
+      var backdrop = document.getElementById('nav-backdrop');
+      if (!toggle || !nav) return;
+
+      function openDrawer() {
+        nav.classList.add('drawer-open');
+        if (backdrop) backdrop.classList.add('visible');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeDrawer() {
+        nav.classList.remove('drawer-open');
+        if (backdrop) backdrop.classList.remove('visible');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      toggle.addEventListener('click', function() {
+        if (nav.classList.contains('drawer-open')) closeDrawer();
+        else openDrawer();
+      });
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+      nav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') closeDrawer();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && nav.classList.contains('drawer-open')) closeDrawer();
+      });
+    })();
+
+    /* ── Severity row detection (border-weight) ──────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var reCritical = /urgente|cr[ií]tic[ao]|bloqueado|bloqueante/i;
+      var reSuccess = /completo|completado|resuelto|listo|blindado/i;
+      var reWarning = /pendiente|revisar|verificar|atenci[oó]n/i;
+      document.querySelectorAll('table tr').forEach(function(row) {
+        if (row.closest('thead')) return;
+        var cells = row.querySelectorAll('td');
+        var detected = null;
+        cells.forEach(function(td) {
+          var t = td.textContent.trim();
+          if (t.length > 35) return;
+          if (!detected && reCritical.test(t)) detected = 'critical';
+          else if (!detected && reSuccess.test(t)) detected = 'success';
+          else if (!detected && reWarning.test(t)) detected = 'warning';
+        });
+        if (detected) row.classList.add('row-' + detected);
+      });
+    });
+  </script>
+
+</body>
+</html>

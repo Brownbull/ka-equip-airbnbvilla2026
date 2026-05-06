@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROAST — Revision Adversarial del Plan</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: false, theme: 'neutral' });</script>
+</head>
+<body>
+
+  <header class="document-header">
+    <div class="doc-meta">
+      <button class="nav-toggle no-print" id="nav-toggle" aria-label="Menú de navegación" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <a href="../../index.html" class="doc-title">Equipamiento Airbnb — Depto Villarrica</a>
+      <span class="doc-badge">CONFIDENCIAL</span>
+    </div>
+    <div class="doc-actions">
+      <button class="print-btn no-print" onclick="window.print()" title="PDF">PDF</button>
+      <button class="pii-load-btn no-print" id="pii-load-btn" title="Cargar pii-manifest.json">Revelar datos</button>
+      <span class="pii-status no-print" id="pii-status"></span>
+    </div>
+  </header>
+
+  <div class="document-layout">
+
+    <nav class="section-nav no-print">
+      <ul>
+<li class="section-title">El Caso</li>
+<ul>
+<li><a href="../../99_entregable/el-caso/RESUMEN.html">El Caso</a></li>
+</ul>
+<li class="section-title">Investigación</li>
+<ul>
+<li><a href="../../99_entregable/investigacion/CALEFACCION.html">Calefaccion</a></li>
+<li><a href="../../99_entregable/investigacion/CERRADURA-INTELIGENTE.html">Cerradura Inteligente</a></li>
+<li><a href="../../99_entregable/investigacion/PRECIOS-REALES.html">Investigacion de Precios Reales</a></li>
+</ul>
+<li class="section-title">Plan</li>
+<ul>
+<li><a href="../../99_entregable/plan/PLAN-POR-ZONAS.html">Plan de Equipamiento por Zonas</a></li>
+</ul>
+<li class="section-title">Presupuesto</li>
+<ul>
+<li><a href="../../99_entregable/presupuesto/PRESUPUESTO-IKEA.html">Presupuesto V2</a></li>
+</ul>
+<li class="section-title">Revisión</li>
+<ul>
+<li><a href="../../99_entregable/revision/ROAST.html">Roast</a></li>
+</ul>
+</ul>
+    </nav>
+
+    <div class="nav-backdrop no-print" id="nav-backdrop"></div>
+
+    <main class="document-content">
+      <div class="disclaimer-bar no-print">
+        Documento orientativo, no vinculante. Elaborado con apoyo de IA. Consulte abogado habilitado.
+      </div>
+      <h1 id="roast-revision-adversarial-del-plan">ROAST — Revision Adversarial del Plan</h1>
+<blockquote>
+<p>Perspectiva: Huesped Airbnb premium internacional — turista de ski, junio-agosto 2026.
+Fecha: 2026-05-06</p>
+</blockquote>
+<hr>
+<h2 id="hallazgos-criticos">Hallazgos Criticos</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Hallazgo</th>
+<th>Impacto</th>
+<th>Correccion</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1</td>
+<td><strong>Calefaccion no incluida en plan original.</strong> Villarrica en invierno: 0-5°C noche, 8-12°C dia. Sin calefaccion = inhabitable en temporada ski.</td>
+<td>CATASTROFICO</td>
+<td>Agregar 3 paneles convectores WiFi (~$210K). Ver <a href="../investigacion/CALEFACCION.html">investigacion calefaccion</a>.</td>
+<td><strong>RESUELTO</strong> — incluido en presupuesto V2</td>
+</tr>
+<tr>
+<td>C2</td>
+<td><strong>Costos de envio no presupuestados.</strong> Villarrica no es zona metropolitana. Envios IKEA, Emma, Mashini: $80K-$150K total.</td>
+<td>Sobrepresupuesto oculto</td>
+<td>Agregar linea "Envios": $120.000.</td>
+<td><strong>RESUELTO</strong> — incluido en presupuesto V2</td>
+</tr>
+<tr>
+<td>C3</td>
+<td><strong>Dependencia internet → cerradura WiFi.</strong> Si internet no esta instalado, cerradura no genera codigos remotos. Si WiFi cae, solo acceso local.</td>
+<td>Huesped no puede entrar</td>
+<td>Contratar internet esta semana. Llave fisica de respaldo en bodega B26.</td>
+<td><strong>PENDIENTE</strong> — internet aun no contratado</td>
+</tr>
+<tr>
+<td>C4</td>
+<td><strong>Reglamento edificio no verificado.</strong> Muchos edificios chilenos prohiben Airbnb. Si prohibe arriendo corto, toda la inversion es inutil.</td>
+<td>Todo el proyecto en riesgo</td>
+<td>Verificar reglamento copropiedad antes de comprar.</td>
+<td><strong>RESUELTO</strong> — edificio PERMITE Airbnb (confirmado)</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="hallazgos-importantes">Hallazgos Importantes</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Hallazgo</th>
+<th>Impacto</th>
+<th>Correccion</th>
+<th>Costo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I1</td>
+<td><strong>Adaptadores de enchufe no incluidos.</strong> Chile usa Tipo L. Turistas europeos/americanos no pueden cargar dispositivos.</td>
+<td>Review negativa</td>
+<td>6 adaptadores universales en cada habitacion + living.</td>
+<td>$20.000</td>
+</tr>
+<tr>
+<td>I2</td>
+<td><strong>Sin cargadores USB junto a camas.</strong> Viajeros esperan cargar telefono desde la cama.</td>
+<td>Incomodidad diaria</td>
+<td>3 zapatillas electricas con USB (1 por dorm + 1 living).</td>
+<td>$24.000</td>
+</tr>
+<tr>
+<td>I3</td>
+<td><strong>Almohadas de $6K son gama baja.</strong> Para estandar premium, almohadas de supermercado no compiten. Segundo item mas tocado despues del colchon.</td>
+<td>Reviews "almohadas duras"</td>
+<td>Upgrade a almohadas $15K c/u (memory foam/microfibra premium). 8 x $15K.</td>
+<td>+$72.000</td>
+</tr>
+<tr>
+<td>I4</td>
+<td><strong>Decoracion de $80K insuficiente para fotos premium.</strong> Fotos del listing = 80% de las reservas. $80K alcanza para cuadros genericos.</td>
+<td>Listing generico</td>
+<td>Upgrade a $168K: cuadros locales, cojines, pie de cama, plantas, fotografo profesional.</td>
+<td>+$88.000</td>
+</tr>
+<tr>
+<td>I5</td>
+<td><strong>Candado bodega B26 no incluido.</strong> Bodega almacena stock de textiles y consumibles. Sin candado = inseguridad.</td>
+<td>Perdida inventario</td>
+<td>Candado resistente.</td>
+<td>$12.000</td>
+</tr>
+<tr>
+<td>I6</td>
+<td><strong>Plan decia "2 singles" pero decision es camarote.</strong> Inconsistencia documental.</td>
+<td>Confusion al comprar</td>
+<td>Actualizado a camarote TUFFING en presupuesto V2.</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>I7</td>
+<td><strong>Sin plancha ni tabla para sabanas blancas hoteleras.</strong> Sabanas 200+ hilos arrugadas = "parece que no las lavaron".</td>
+<td>Degrada percepcion</td>
+<td>Plancha + tabla de planchar.</td>
+<td>$40.000</td>
+</tr>
+<tr>
+<td>I8</td>
+<td><strong>Seguro de host no mencionado.</strong> Depto con $4M en contenido necesita seguro complementario a AirCover.</td>
+<td>Riesgo financiero</td>
+<td>Evaluar seguro hogar para arriendo turistico. ~$15-25K/mes (costo operacional).</td>
+<td>Mensual</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="hallazgos-menores">Hallazgos Menores</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Hallazgo</th>
+<th>Correccion</th>
+<th>Costo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1</td>
+<td>Sin espejo de cuerpo completo en dormitorio</td>
+<td>Espejo apoyado en pared Dorm 1</td>
+<td>$20.000</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>Kit bienvenida basico ($8K) para estandar premium</td>
+<td>Upgrade a $18K con productos locales Villarrica/Pucon</td>
+<td>+$10.000</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>Sin guia del huesped (house manual)</td>
+<td>Manual impreso laminado o PDF con QR codes</td>
+<td>~$5.000</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>Estacionamiento E94 no mencionado como amenity</td>
+<td>Documentar como amenity destacado en listing</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>Ropa sofa-cama podria ser baja calidad</td>
+<td>Usar mismos textiles que camas principales</td>
+<td>+$10.000</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>Sin 2da llave fisica de emergencia</td>
+<td>Copia de llave en bodega B26</td>
+<td>~$5.000</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="impacto-financiero">Impacto Financiero</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Costo Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Correcciones CRITICAS</td>
+<td>$225.000 - $325.000</td>
+</tr>
+<tr>
+<td>Correcciones IMPORTANTES</td>
+<td>$238.000 - $288.000</td>
+</tr>
+<tr>
+<td><strong>Total correcciones</strong></td>
+<td><strong>$463.000 - $613.000</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="presupuesto-post-roast">Presupuesto Post-ROAST</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Pre-ROAST</th>
+<th>Post-ROAST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base presupuestada</td>
+<td>$3.672.000</td>
+<td>$3.672.000</td>
+</tr>
+<tr>
+<td>+ Correcciones criticas</td>
+<td>—</td>
+<td>+$275.000</td>
+</tr>
+<tr>
+<td>+ Correcciones importantes</td>
+<td>—</td>
+<td>+$263.000</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td><strong>$3.672.000</strong></td>
+<td><strong>$4.210.000</strong></td>
+</tr>
+<tr>
+<td><strong>Holgura</strong></td>
+<td>$1.828.000 (33%)</td>
+<td><strong>$1.290.000 (23%)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El presupuesto sigue holgado incluso con todas las correcciones.</strong> $1.29M de reserva minima (23%).</p>
+<hr>
+<h2 id="score-del-plan">Score del Plan</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Score</th>
+<th>Comentario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Completitud</td>
+<td>7/10</td>
+<td>Buen plan, gap critico en calefaccion corregido. Items menores faltantes.</td>
+</tr>
+<tr>
+<td>Presupuesto</td>
+<td>9/10</td>
+<td>Muy holgado. Incluso con correcciones sobra &gt;23%.</td>
+</tr>
+<tr>
+<td>Calidad/Uso</td>
+<td>7/10</td>
+<td>Buena base premium. Almohadas y decoracion upgradeados.</td>
+</tr>
+<tr>
+<td>Tributario</td>
+<td>5/10</td>
+<td>DFL2 aun sin confirmar con contador.</td>
+</tr>
+<tr>
+<td>Logistica</td>
+<td>6/10</td>
+<td>Cronograma realista. Envios presupuestados. Internet pendiente.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Score promedio: 6.8/10</strong> — Plan solido con gaps corregibles. Ninguno insalvable.</p>
+<hr>
+<h2 id="acciones-prioritarias">Acciones Prioritarias</h2>
+<ol>
+<li><strong>HOY:</strong> Contratar internet fibra (C3)</li>
+<li><strong>AL COMPRAR:</strong> Todos los items I1-I7 ya incorporados en <a href="../presupuesto/PRESUPUESTO-IKEA.html">presupuesto V2</a></li>
+<li><strong>AL CREAR LISTING:</strong> Destacar estacionamiento E94 (M4), crear house manual (M3)</li>
+<li><strong>MENSUAL:</strong> Evaluar seguro contenido hogar (I8)</li>
+</ol>
+    </main>
+
+    <aside class="jump-bar no-print">
+      <h4>En esta pagina</h4>
+      <ul class="jump-list">
+<li><a href="#hallazgos-criticos">Hallazgos Criticos</a></li>
+<li><a href="#hallazgos-importantes">Hallazgos Importantes</a></li>
+<li><a href="#hallazgos-menores">Hallazgos Menores</a></li>
+<li><a href="#impacto-financiero">Impacto Financiero</a></li>
+<li><a href="#score-del-plan">Score del Plan</a></li>
+<li><a href="#acciones-prioritarias">Acciones Prioritarias</a></li>
+</ul>
+    </aside>
+
+  </div>
+
+  <footer class="document-footer no-print">
+    Contenido generado con apoyo de IA — orientativo, no vinculante.
+  </footer>
+
+  <script>
+    /* ── Active link in section-nav ──────────────────────────────────────── */
+    (function() {
+      var current = window.location.href.split('?')[0].split('#')[0];
+      document.querySelectorAll('.section-nav a').forEach(function(link) {
+        if (link.href.split('?')[0].split('#')[0] === current)
+          link.classList.add('active');
+      });
+    })();
+
+    /* ── PII manifest.json loader ────────────────────────────────────────── */
+    (function() {
+      var btn = document.getElementById('pii-load-btn');
+      var status = document.getElementById('pii-status');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json,application/json';
+        input.onchange = function(e) {
+          var file = e.target.files[0];
+          if (!file) return;
+          var reader = new FileReader();
+          reader.onload = function(ev) {
+            try {
+              var manifest = JSON.parse(ev.target.result);
+              var spans = document.querySelectorAll('.pii-redacted');
+              var count = 0;
+              spans.forEach(function(span) {
+                var token = span.getAttribute('data-token');
+                if (manifest[token]) {
+                  span.textContent = manifest[token];
+                  span.classList.remove('pii-redacted');
+                  span.classList.add('pii-revealed');
+                  count++;
+                }
+              });
+              if (count > 0) {
+                btn.textContent = 'Datos revelados (' + count + ')';
+                btn.classList.add('pii-loaded');
+                if (status) status.textContent = '';
+              } else {
+                if (status) status.textContent = 'Sin datos en esta pagina';
+              }
+            } catch(err) {
+              if (status) status.textContent = 'Error: JSON invalido';
+            }
+          };
+          reader.readAsText(file);
+        };
+        input.click();
+      });
+    })();
+
+    /* ── Mermaid render ──────────────────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      if (document.querySelector('.mermaid')) {
+        mermaid.run({ querySelector: '.mermaid' });
+      }
+    });
+
+    /* ── Mermaid fullscreen (click to zoom + drag) ─────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var overlay = document.createElement('div');
+      overlay.className = 'mermaid-overlay';
+      overlay.innerHTML = '<button class="close-overlay no-print">&times;</button><div class="mermaid-inner"></div>';
+      document.body.appendChild(overlay);
+
+      var inner = overlay.querySelector('.mermaid-inner');
+      var closeBtn = overlay.querySelector('.close-overlay');
+      var scale = 1, posX = 0, posY = 0, startX, startY, isDragging = false;
+
+      function updateTransform() {
+        inner.style.transform = 'translate(' + posX + 'px,' + posY + 'px) scale(' + scale + ')';
+      }
+
+      function openOverlay(svg) {
+        inner.innerHTML = '';
+        var clone = svg.cloneNode(true);
+        clone.style.maxWidth = 'none';
+        clone.style.maxHeight = 'none';
+        inner.appendChild(clone);
+        scale = 1; posX = 0; posY = 0;
+        updateTransform();
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeOverlay() {
+        overlay.classList.remove('active');
+        overlay.classList.remove('dragging');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeOverlay);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeOverlay();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) closeOverlay();
+      });
+
+      // Click on mermaid to open
+      document.addEventListener('click', function(e) {
+        var merm = e.target.closest('.mermaid');
+        if (!merm || overlay.classList.contains('active')) return;
+        var svg = merm.querySelector('svg');
+        if (svg) openOverlay(svg);
+      });
+
+      // Drag (mouse)
+      overlay.addEventListener('mousedown', function(e) {
+        if (e.target === closeBtn) return;
+        isDragging = true;
+        startX = e.clientX - posX;
+        startY = e.clientY - posY;
+        overlay.classList.add('dragging');
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        posX = e.clientX - startX;
+        posY = e.clientY - startY;
+        updateTransform();
+      });
+      document.addEventListener('mouseup', function() {
+        isDragging = false;
+        overlay.classList.remove('dragging');
+      });
+
+      // Drag (touch)
+      var lastTouchDist = 0;
+      overlay.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 1) {
+          isDragging = true;
+          startX = e.touches[0].clientX - posX;
+          startY = e.touches[0].clientY - posY;
+        } else if (e.touches.length === 2) {
+          isDragging = false;
+          lastTouchDist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+        }
+      }, { passive: true });
+      overlay.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 1 && isDragging) {
+          posX = e.touches[0].clientX - startX;
+          posY = e.touches[0].clientY - startY;
+          updateTransform();
+        } else if (e.touches.length === 2) {
+          var dist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          if (lastTouchDist > 0) {
+            scale = Math.max(0.5, Math.min(5, scale * (dist / lastTouchDist)));
+            updateTransform();
+          }
+          lastTouchDist = dist;
+        }
+      }, { passive: true });
+      overlay.addEventListener('touchend', function() {
+        isDragging = false;
+        lastTouchDist = 0;
+      });
+
+      // Zoom (scroll wheel)
+      overlay.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        var delta = e.deltaY > 0 ? 0.9 : 1.1;
+        scale = Math.max(0.5, Math.min(5, scale * delta));
+        updateTransform();
+      }, { passive: false });
+    });
+
+    /* ── Jump bar scroll tracking ────────────────────────────────────────── */
+    (function() {
+      var jumpLinks = document.querySelectorAll('.jump-list a');
+      if (!jumpLinks.length) return;
+
+      var headings = [];
+      jumpLinks.forEach(function(link) {
+        var id = link.getAttribute('href');
+        if (id && id.startsWith('#')) {
+          var el = document.getElementById(id.substring(1));
+          if (el) headings.push({ el: el, link: link });
+        }
+      });
+
+      if (!headings.length || !window.IntersectionObserver) return;
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            jumpLinks.forEach(function(link) {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, { rootMargin: '-20% 0px -60% 0px' });
+
+      headings.forEach(function(h) { observer.observe(h.el); });
+    })();
+
+    /* ── Score ring count-up + fill (for PANEL.md) ───────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.score-ring').forEach(function(ring) {
+        var numEl = ring.querySelector('.number[data-target]');
+        if (!numEl) return;
+        var target = parseInt(numEl.getAttribute('data-target'), 10);
+        var fillCircle = ring.querySelector('circle.fill');
+
+        if (fillCircle) {
+          var r = parseFloat(fillCircle.getAttribute('r') || '44');
+          var circumference = 2 * Math.PI * r;
+          fillCircle.style.strokeDasharray = String(circumference);
+          fillCircle.style.strokeDashoffset = String(circumference);
+          setTimeout(function() {
+            fillCircle.style.strokeDashoffset = String(circumference * (1 - target / 100));
+          }, 150);
+        }
+
+        var duration = 1200;
+        var startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          var progress = Math.min((ts - startTime) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          numEl.textContent = Math.round(target * eased);
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    });
+
+    /* ── Sidebar accordion ───────────────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var titles = document.querySelectorAll('.section-nav li.section-title');
+      titles.forEach(function(title) {
+        var ul = title.nextElementSibling;
+        if (!ul || ul.tagName !== 'UL') return;
+
+        var icon = document.createElement('span');
+        icon.className = 'section-toggle-icon';
+        icon.textContent = '+';
+        title.appendChild(icon);
+
+        ul.style.display = 'none';
+
+        function toggle() {
+          var open = ul.style.display !== 'none';
+          ul.style.display = open ? 'none' : '';
+          icon.textContent = open ? '+' : '-';
+        }
+        title.addEventListener('click', toggle);
+      });
+
+      var activeLink = document.querySelector('.section-nav a.active');
+      if (activeLink) {
+        var el = activeLink.parentElement;
+        var nav = document.querySelector('.section-nav');
+        while (el && el !== nav) {
+          if (el.tagName === 'UL' && el.parentElement !== nav) {
+            el.style.display = '';
+            var prev = el.previousElementSibling;
+            if (prev && prev.classList.contains('section-title')) {
+              var icon = prev.querySelector('.section-toggle-icon');
+              if (icon) icon.textContent = '-';
+            }
+          }
+          el = el.parentElement;
+        }
+      }
+    });
+
+    /* ── Mobile drawer toggle ──────────────────────────────────────────── */
+    (function() {
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.querySelector('.section-nav');
+      var backdrop = document.getElementById('nav-backdrop');
+      if (!toggle || !nav) return;
+
+      function openDrawer() {
+        nav.classList.add('drawer-open');
+        if (backdrop) backdrop.classList.add('visible');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeDrawer() {
+        nav.classList.remove('drawer-open');
+        if (backdrop) backdrop.classList.remove('visible');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      toggle.addEventListener('click', function() {
+        if (nav.classList.contains('drawer-open')) closeDrawer();
+        else openDrawer();
+      });
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+      nav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') closeDrawer();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && nav.classList.contains('drawer-open')) closeDrawer();
+      });
+    })();
+
+    /* ── Severity row detection (border-weight) ──────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var reCritical = /urgente|cr[ií]tic[ao]|bloqueado|bloqueante/i;
+      var reSuccess = /completo|completado|resuelto|listo|blindado/i;
+      var reWarning = /pendiente|revisar|verificar|atenci[oó]n/i;
+      document.querySelectorAll('table tr').forEach(function(row) {
+        if (row.closest('thead')) return;
+        var cells = row.querySelectorAll('td');
+        var detected = null;
+        cells.forEach(function(td) {
+          var t = td.textContent.trim();
+          if (t.length > 35) return;
+          if (!detected && reCritical.test(t)) detected = 'critical';
+          else if (!detected && reSuccess.test(t)) detected = 'success';
+          else if (!detected && reWarning.test(t)) detected = 'warning';
+        });
+        if (detected) row.classList.add('row-' + detected);
+      });
+    });
+  </script>
+
+</body>
+</html>

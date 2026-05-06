@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calefaccion — Solucion al Gap Critico</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: false, theme: 'neutral' });</script>
+</head>
+<body>
+
+  <header class="document-header">
+    <div class="doc-meta">
+      <button class="nav-toggle no-print" id="nav-toggle" aria-label="Menú de navegación" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <a href="../../index.html" class="doc-title">Equipamiento Airbnb — Depto Villarrica</a>
+      <span class="doc-badge">CONFIDENCIAL</span>
+    </div>
+    <div class="doc-actions">
+      <button class="print-btn no-print" onclick="window.print()" title="PDF">PDF</button>
+      <button class="pii-load-btn no-print" id="pii-load-btn" title="Cargar pii-manifest.json">Revelar datos</button>
+      <span class="pii-status no-print" id="pii-status"></span>
+    </div>
+  </header>
+
+  <div class="document-layout">
+
+    <nav class="section-nav no-print">
+      <ul>
+<li class="section-title">El Caso</li>
+<ul>
+<li><a href="../../99_entregable/el-caso/RESUMEN.html">El Caso</a></li>
+</ul>
+<li class="section-title">Investigación</li>
+<ul>
+<li><a href="../../99_entregable/investigacion/CALEFACCION.html">Calefaccion</a></li>
+<li><a href="../../99_entregable/investigacion/CERRADURA-INTELIGENTE.html">Cerradura Inteligente</a></li>
+<li><a href="../../99_entregable/investigacion/PRECIOS-REALES.html">Investigacion de Precios Reales</a></li>
+</ul>
+<li class="section-title">Plan</li>
+<ul>
+<li><a href="../../99_entregable/plan/PLAN-POR-ZONAS.html">Plan de Equipamiento por Zonas</a></li>
+</ul>
+<li class="section-title">Presupuesto</li>
+<ul>
+<li><a href="../../99_entregable/presupuesto/PRESUPUESTO-IKEA.html">Presupuesto V2</a></li>
+</ul>
+<li class="section-title">Revisión</li>
+<ul>
+<li><a href="../../99_entregable/revision/ROAST.html">Roast</a></li>
+</ul>
+</ul>
+    </nav>
+
+    <div class="nav-backdrop no-print" id="nav-backdrop"></div>
+
+    <main class="document-content">
+      <div class="disclaimer-bar no-print">
+        Documento orientativo, no vinculante. Elaborado con apoyo de IA. Consulte abogado habilitado.
+      </div>
+      <h1 id="calefaccion-solucion-al-gap-critico">Calefaccion — Solucion al Gap Critico</h1>
+<blockquote>
+<p>Hallazgo ROAST C1: El departamento NO tiene calefaccion.
+Villarrica en invierno (jun-ago): 0-5°C de noche, 8-12°C de dia.
+Sin calefaccion, el Airbnb es inhabitable en temporada ski.</p>
+</blockquote>
+<hr>
+<h2 id="opciones-evaluadas">Opciones Evaluadas</h2>
+<h3 id="opcion-a-paneles-convectores-electricos-wifi-recomendada">Opcion A — Paneles Convectores Electricos WiFi (Recomendada)</h3>
+<p>Paneles murales o de piso con control por app, programables, silenciosos.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Zona</th>
+<th>m²</th>
+<th>Potencia Necesaria</th>
+<th>Producto</th>
+<th>Precio</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Living-cocina</td>
+<td>21,3</td>
+<td>1500W</td>
+<td><a href="https://kendalchile.cl/products/panel-convector-wifi-kpn1500al-kendal">Kendal KPN-1500AL WiFi</a></td>
+<td><strong>$89.990</strong></td>
+<td><a href="https://kendalchile.cl/products/panel-convector-wifi-kpn1500al-kendal">Ver en Kendal</a></td>
+</tr>
+<tr>
+<td>Dormitorio 1</td>
+<td>13</td>
+<td>1000W</td>
+<td><a href="https://www.ehac.cl/panel-calefactor-electrico-anwo-wi-fi-1500-watts">Anwo WiFi 1000W</a></td>
+<td>~$70.000</td>
+<td><a href="https://www.ehac.cl/panel-calefactor-electrico-anwo-wi-fi-1500-watts">Ver en EHAC</a></td>
+</tr>
+<tr>
+<td>Dormitorio 2</td>
+<td>7,5</td>
+<td>750W</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/lista/cat9910006/Estufas-Electricas">Calefactores electricos Sodimac</a></td>
+<td>~$50.000</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/lista/cat9910006/Estufas-Electricas">Ver en Sodimac</a></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td><strong>3 paneles</strong></td>
+<td><strong>~$210.000</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Caracteristicas del Kendal KPN-1500AL WiFi:</strong>
+- Potencia: 750/1500W (dos niveles)
+- Cobertura: 15-18 m²
+- App: Tuya Smart (misma app que la cerradura Zeylink)
+- Termostato ajustable + pantalla LED
+- IPx4 (resistente a humedad)
+- Instalacion: mural (tornillos) o piso (incluye ruedas)
+- Dimensiones: 76 x 24 x 42 cm
+- Garantia: 1 ano</p>
+<p><strong>Ventajas:</strong>
+- Economico ($210K total)
+- Instalacion DIY o tecnico basico
+- Control independiente por zona via app
+- Sin obra civil
+- Sin unidad exterior</p>
+<p><strong>Desventajas:</strong>
+- Consumo electrico: ~$30-50K/mes en invierno con uso moderado
+- No enfria en verano</p>
+<h3 id="opcion-b-split-inverter-friocalor">Opcion B — Split Inverter Frio/Calor</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Precio</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.sodimac.cl/sodimac-cl/lista/cat7170003/Calefaccion">Split inverter 12.000 BTU</a></td>
+<td>$320.000 - $410.000</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/lista/cat7170003/Calefaccion">Ver climatizacion Sodimac</a></td>
+</tr>
+<tr>
+<td>Instalacion profesional</td>
+<td>$40.000 - $60.000</td>
+<td>Tecnico certificado SEC</td>
+</tr>
+<tr>
+<td>Panel complementario dorm 2</td>
+<td>~$50.000</td>
+<td>Convector electrico</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>$410.000 - $520.000</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ventajas:</strong>
+- Calefaccion mas eficiente (bomba de calor)
+- Tambien enfria en verano
+- Menor consumo electrico que paneles</p>
+<p><strong>Desventajas:</strong>
+- $200-300K mas caro
+- Requiere tecnico certificado para instalacion
+- Unidad exterior en balcon (ocupa espacio del bistro)
+- Posible restriccion del edificio (verificar reglamento)</p>
+<hr>
+<h2 id="recomendacion">Recomendacion</h2>
+<p><strong>Opcion A (paneles WiFi) para empezar.</strong> $210K, instalacion inmediata, sin obra civil. Si la experiencia del primer invierno muestra que no basta, agregar split inverter en primavera 2026 (cuando ademas sirve como AC para verano).</p>
+<p><strong>Bonus operacional:</strong> Si la cerradura elegida es Zeylink (Tuya), los calefactores Kendal (tambien Tuya) se controlan desde la misma app. Se puede encender la calefaccion antes de que llegue el huesped.</p>
+<hr>
+<h2 id="referencia-potencia-por-superficie">Referencia: Potencia por Superficie</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Superficie</th>
+<th>Potencia Recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hasta 10 m²</td>
+<td>750W</td>
+</tr>
+<tr>
+<td>10-15 m²</td>
+<td>1000W</td>
+</tr>
+<tr>
+<td>15-20 m²</td>
+<td>1500W</td>
+</tr>
+<tr>
+<td>20-25 m²</td>
+<td>1500-2000W</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>Fuente: guias de <a href="https://www.sodimac.cl/sodimac-cl/lista/cat7170003/Calefaccion">Sodimac Chile</a></p>
+</blockquote>
+    </main>
+
+    <aside class="jump-bar no-print">
+      <h4>En esta pagina</h4>
+      <ul class="jump-list">
+<li><a href="#opciones-evaluadas">Opciones Evaluadas</a></li>
+<li><a href="#recomendacion">Recomendacion</a></li>
+<li><a href="#referencia-potencia-por-superficie">Referencia: Potencia por Superficie</a></li>
+</ul>
+    </aside>
+
+  </div>
+
+  <footer class="document-footer no-print">
+    Contenido generado con apoyo de IA — orientativo, no vinculante.
+  </footer>
+
+  <script>
+    /* ── Active link in section-nav ──────────────────────────────────────── */
+    (function() {
+      var current = window.location.href.split('?')[0].split('#')[0];
+      document.querySelectorAll('.section-nav a').forEach(function(link) {
+        if (link.href.split('?')[0].split('#')[0] === current)
+          link.classList.add('active');
+      });
+    })();
+
+    /* ── PII manifest.json loader ────────────────────────────────────────── */
+    (function() {
+      var btn = document.getElementById('pii-load-btn');
+      var status = document.getElementById('pii-status');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json,application/json';
+        input.onchange = function(e) {
+          var file = e.target.files[0];
+          if (!file) return;
+          var reader = new FileReader();
+          reader.onload = function(ev) {
+            try {
+              var manifest = JSON.parse(ev.target.result);
+              var spans = document.querySelectorAll('.pii-redacted');
+              var count = 0;
+              spans.forEach(function(span) {
+                var token = span.getAttribute('data-token');
+                if (manifest[token]) {
+                  span.textContent = manifest[token];
+                  span.classList.remove('pii-redacted');
+                  span.classList.add('pii-revealed');
+                  count++;
+                }
+              });
+              if (count > 0) {
+                btn.textContent = 'Datos revelados (' + count + ')';
+                btn.classList.add('pii-loaded');
+                if (status) status.textContent = '';
+              } else {
+                if (status) status.textContent = 'Sin datos en esta pagina';
+              }
+            } catch(err) {
+              if (status) status.textContent = 'Error: JSON invalido';
+            }
+          };
+          reader.readAsText(file);
+        };
+        input.click();
+      });
+    })();
+
+    /* ── Mermaid render ──────────────────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      if (document.querySelector('.mermaid')) {
+        mermaid.run({ querySelector: '.mermaid' });
+      }
+    });
+
+    /* ── Mermaid fullscreen (click to zoom + drag) ─────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var overlay = document.createElement('div');
+      overlay.className = 'mermaid-overlay';
+      overlay.innerHTML = '<button class="close-overlay no-print">&times;</button><div class="mermaid-inner"></div>';
+      document.body.appendChild(overlay);
+
+      var inner = overlay.querySelector('.mermaid-inner');
+      var closeBtn = overlay.querySelector('.close-overlay');
+      var scale = 1, posX = 0, posY = 0, startX, startY, isDragging = false;
+
+      function updateTransform() {
+        inner.style.transform = 'translate(' + posX + 'px,' + posY + 'px) scale(' + scale + ')';
+      }
+
+      function openOverlay(svg) {
+        inner.innerHTML = '';
+        var clone = svg.cloneNode(true);
+        clone.style.maxWidth = 'none';
+        clone.style.maxHeight = 'none';
+        inner.appendChild(clone);
+        scale = 1; posX = 0; posY = 0;
+        updateTransform();
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeOverlay() {
+        overlay.classList.remove('active');
+        overlay.classList.remove('dragging');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeOverlay);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeOverlay();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) closeOverlay();
+      });
+
+      // Click on mermaid to open
+      document.addEventListener('click', function(e) {
+        var merm = e.target.closest('.mermaid');
+        if (!merm || overlay.classList.contains('active')) return;
+        var svg = merm.querySelector('svg');
+        if (svg) openOverlay(svg);
+      });
+
+      // Drag (mouse)
+      overlay.addEventListener('mousedown', function(e) {
+        if (e.target === closeBtn) return;
+        isDragging = true;
+        startX = e.clientX - posX;
+        startY = e.clientY - posY;
+        overlay.classList.add('dragging');
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        posX = e.clientX - startX;
+        posY = e.clientY - startY;
+        updateTransform();
+      });
+      document.addEventListener('mouseup', function() {
+        isDragging = false;
+        overlay.classList.remove('dragging');
+      });
+
+      // Drag (touch)
+      var lastTouchDist = 0;
+      overlay.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 1) {
+          isDragging = true;
+          startX = e.touches[0].clientX - posX;
+          startY = e.touches[0].clientY - posY;
+        } else if (e.touches.length === 2) {
+          isDragging = false;
+          lastTouchDist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+        }
+      }, { passive: true });
+      overlay.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 1 && isDragging) {
+          posX = e.touches[0].clientX - startX;
+          posY = e.touches[0].clientY - startY;
+          updateTransform();
+        } else if (e.touches.length === 2) {
+          var dist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          if (lastTouchDist > 0) {
+            scale = Math.max(0.5, Math.min(5, scale * (dist / lastTouchDist)));
+            updateTransform();
+          }
+          lastTouchDist = dist;
+        }
+      }, { passive: true });
+      overlay.addEventListener('touchend', function() {
+        isDragging = false;
+        lastTouchDist = 0;
+      });
+
+      // Zoom (scroll wheel)
+      overlay.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        var delta = e.deltaY > 0 ? 0.9 : 1.1;
+        scale = Math.max(0.5, Math.min(5, scale * delta));
+        updateTransform();
+      }, { passive: false });
+    });
+
+    /* ── Jump bar scroll tracking ────────────────────────────────────────── */
+    (function() {
+      var jumpLinks = document.querySelectorAll('.jump-list a');
+      if (!jumpLinks.length) return;
+
+      var headings = [];
+      jumpLinks.forEach(function(link) {
+        var id = link.getAttribute('href');
+        if (id && id.startsWith('#')) {
+          var el = document.getElementById(id.substring(1));
+          if (el) headings.push({ el: el, link: link });
+        }
+      });
+
+      if (!headings.length || !window.IntersectionObserver) return;
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            jumpLinks.forEach(function(link) {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, { rootMargin: '-20% 0px -60% 0px' });
+
+      headings.forEach(function(h) { observer.observe(h.el); });
+    })();
+
+    /* ── Score ring count-up + fill (for PANEL.md) ───────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.score-ring').forEach(function(ring) {
+        var numEl = ring.querySelector('.number[data-target]');
+        if (!numEl) return;
+        var target = parseInt(numEl.getAttribute('data-target'), 10);
+        var fillCircle = ring.querySelector('circle.fill');
+
+        if (fillCircle) {
+          var r = parseFloat(fillCircle.getAttribute('r') || '44');
+          var circumference = 2 * Math.PI * r;
+          fillCircle.style.strokeDasharray = String(circumference);
+          fillCircle.style.strokeDashoffset = String(circumference);
+          setTimeout(function() {
+            fillCircle.style.strokeDashoffset = String(circumference * (1 - target / 100));
+          }, 150);
+        }
+
+        var duration = 1200;
+        var startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          var progress = Math.min((ts - startTime) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          numEl.textContent = Math.round(target * eased);
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    });
+
+    /* ── Sidebar accordion ───────────────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var titles = document.querySelectorAll('.section-nav li.section-title');
+      titles.forEach(function(title) {
+        var ul = title.nextElementSibling;
+        if (!ul || ul.tagName !== 'UL') return;
+
+        var icon = document.createElement('span');
+        icon.className = 'section-toggle-icon';
+        icon.textContent = '+';
+        title.appendChild(icon);
+
+        ul.style.display = 'none';
+
+        function toggle() {
+          var open = ul.style.display !== 'none';
+          ul.style.display = open ? 'none' : '';
+          icon.textContent = open ? '+' : '-';
+        }
+        title.addEventListener('click', toggle);
+      });
+
+      var activeLink = document.querySelector('.section-nav a.active');
+      if (activeLink) {
+        var el = activeLink.parentElement;
+        var nav = document.querySelector('.section-nav');
+        while (el && el !== nav) {
+          if (el.tagName === 'UL' && el.parentElement !== nav) {
+            el.style.display = '';
+            var prev = el.previousElementSibling;
+            if (prev && prev.classList.contains('section-title')) {
+              var icon = prev.querySelector('.section-toggle-icon');
+              if (icon) icon.textContent = '-';
+            }
+          }
+          el = el.parentElement;
+        }
+      }
+    });
+
+    /* ── Mobile drawer toggle ──────────────────────────────────────────── */
+    (function() {
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.querySelector('.section-nav');
+      var backdrop = document.getElementById('nav-backdrop');
+      if (!toggle || !nav) return;
+
+      function openDrawer() {
+        nav.classList.add('drawer-open');
+        if (backdrop) backdrop.classList.add('visible');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeDrawer() {
+        nav.classList.remove('drawer-open');
+        if (backdrop) backdrop.classList.remove('visible');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      toggle.addEventListener('click', function() {
+        if (nav.classList.contains('drawer-open')) closeDrawer();
+        else openDrawer();
+      });
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+      nav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') closeDrawer();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && nav.classList.contains('drawer-open')) closeDrawer();
+      });
+    })();
+
+    /* ── Severity row detection (border-weight) ──────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var reCritical = /urgente|cr[ií]tic[ao]|bloqueado|bloqueante/i;
+      var reSuccess = /completo|completado|resuelto|listo|blindado/i;
+      var reWarning = /pendiente|revisar|verificar|atenci[oó]n/i;
+      document.querySelectorAll('table tr').forEach(function(row) {
+        if (row.closest('thead')) return;
+        var cells = row.querySelectorAll('td');
+        var detected = null;
+        cells.forEach(function(td) {
+          var t = td.textContent.trim();
+          if (t.length > 35) return;
+          if (!detected && reCritical.test(t)) detected = 'critical';
+          else if (!detected && reSuccess.test(t)) detected = 'success';
+          else if (!detected && reWarning.test(t)) detected = 'warning';
+        });
+        if (detected) row.classList.add('row-' + detected);
+      });
+    });
+  </script>
+
+</body>
+</html>
