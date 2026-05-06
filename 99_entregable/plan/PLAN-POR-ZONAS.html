@@ -62,6 +62,13 @@
       <div class="disclaimer-bar no-print">
         Documento orientativo, no vinculante. Elaborado con apoyo de IA. Consulte abogado habilitado.
       </div>
+      <div class="priority-filter no-print" id="priority-filter" style="display:none;">
+        <span class="filter-label">Filtrar:</span>
+        <button class="filter-btn active" data-priority="all">Todos</button>
+        <button class="filter-btn" data-priority="critico">Critico</button>
+        <button class="filter-btn" data-priority="importante">Importante</button>
+        <button class="filter-btn" data-priority="deseable">Deseable</button>
+      </div>
       <h1 id="plan-de-equipamiento-por-zonas">Plan de Equipamiento por Zonas</h1>
 <blockquote>
 <p>6 zonas, ~60 items. IKEA como tienda default.
@@ -139,10 +146,38 @@ Prioridades: CRITICO (sin esto no opera) / IMPORTANTE (completa experiencia) / D
 <td><a href="https://kendalchile.cl/search?q=calefactor">Ver calefactores Kendal</a> / <a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=panel+calefactor+wifi">Ver en Sodimac</a></td>
 </tr>
 <tr>
+<td>Alfombra pie de cama</td>
+<td>DESEABLE</td>
+<td>IKEA TIPHEDE 120x180</td>
+<td>~$25.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tiphede-alfombra-natural-negro-40456757/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Perchero mural entrada</td>
+<td>DESEABLE</td>
+<td>IKEA TJUSIG negro</td>
+<td>~$15.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tjusig-colgador-negro-80291707/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Cajas organizador closet x6</td>
+<td>DESEABLE</td>
+<td>IKEA SKUBB blanco</td>
+<td>~$15.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/skubb-cajas-set-de-6-blanco-00428549/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Velas decorativas</td>
+<td>DESEABLE</td>
+<td>IKEA HEMSJOE natural</td>
+<td>~$3.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/hemsjoe-vela-grande-sin-aroma-natural-70124262/">Ver producto</a></td>
+</tr>
+<tr>
 <td><strong>Subtotal</strong></td>
 <td></td>
 <td></td>
-<td><strong>$472.757</strong></td>
+<td><strong>~$533.000</strong></td>
 <td></td>
 </tr>
 </tbody>
@@ -212,10 +247,24 @@ Prioridades: CRITICO (sin esto no opera) / IMPORTANTE (completa experiencia) / D
 <td><a href="https://kendalchile.cl/search?q=calefactor">Ver calefactores Kendal</a> / <a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=panel+calefactor+wifi">Ver en Sodimac</a></td>
 </tr>
 <tr>
+<td>Lampara lectura (pie)</td>
+<td>DESEABLE</td>
+<td>IKEA HARSLINGA negro</td>
+<td>~$30.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/harslinga-lampara-de-pie-negro-50556493/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Cajas organizador closet x6</td>
+<td>DESEABLE</td>
+<td>IKEA SKUBB blanco</td>
+<td>~$15.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/skubb-cajas-set-de-6-blanco-00428549/">Ver producto</a></td>
+</tr>
+<tr>
 <td><strong>Subtotal</strong></td>
 <td></td>
 <td></td>
-<td><strong>$434.970</strong></td>
+<td><strong>~$480.000</strong></td>
 <td></td>
 </tr>
 </tbody>
@@ -334,10 +383,66 @@ Prioridades: CRITICO (sin esto no opera) / IMPORTANTE (completa experiencia) / D
 <td><a href="https://kendalchile.cl/search?q=calefactor">Ver calefactores Kendal</a> / <a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=panel+calefactor+wifi">Ver en Sodimac</a></td>
 </tr>
 <tr>
+<td>Reloj de pared</td>
+<td>DESEABLE</td>
+<td>IKEA TROMMA blanco</td>
+<td>~$8.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tromma-reloj-de-pared-blanco-30557078/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Parlante bluetooth portatil</td>
+<td>DESEABLE</td>
+<td>Falabella/Sodimac</td>
+<td>~$20.000</td>
+<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=parlante+bluetooth+portatil">Ver en Falabella</a></td>
+</tr>
+<tr>
+<td>Bandeja desayuno/servicio</td>
+<td>DESEABLE</td>
+<td>IKEA OSTBIT bambu</td>
+<td>~$8.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/ostbit-bandeja-bambu-30452991/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Bandeja de cama</td>
+<td>DESEABLE</td>
+<td>IKEA RESGODS bambu</td>
+<td>~$12.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/resgods-bandeja-de-cama-bambu-30444468/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Portavelas decorativos x3</td>
+<td>DESEABLE</td>
+<td>IKEA FINSMAK vidrio</td>
+<td>~$3.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/finsmak-portavela-vidrio-incoloro-00470982/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Juegos de mesa</td>
+<td>DESEABLE</td>
+<td>Sodimac/MercadoLibre</td>
+<td>~$15.000</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=juegos+de+mesa">Ver en Sodimac</a></td>
+</tr>
+<tr>
+<td>Cargador inalambrico x2</td>
+<td>DESEABLE</td>
+<td>Sodimac</td>
+<td>~$15.000</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=cargador+inalambrico">Ver en Sodimac</a></td>
+</tr>
+<tr>
+<td>Alfombra living</td>
+<td>DESEABLE</td>
+<td>IKEA TIPHEDE 155x220</td>
+<td>~$40.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tiphede-alfombra-negro-natural-20470047/">Ver producto</a></td>
+</tr>
+<tr>
 <td><strong>Subtotal</strong></td>
 <td></td>
 <td></td>
-<td><strong>~$1.434.000</strong></td>
+<td><strong>~$1.555.000</strong></td>
 <td></td>
 </tr>
 </tbody>
@@ -413,10 +518,31 @@ Prioridades: CRITICO (sin esto no opera) / IMPORTANTE (completa experiencia) / D
 <td><a href="https://www.falabella.com/falabella-cl/search?Ntt=secador+pelo">Ver en Falabella</a></td>
 </tr>
 <tr>
+<td>Alfombra bano antideslizante</td>
+<td>DESEABLE</td>
+<td>IKEA TIPHEDE 60x90</td>
+<td>~$10.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tiphede-alfombra-natural-negro-40592825/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Canasto ropa sucia</td>
+<td>DESEABLE</td>
+<td>IKEA PURRPINGLA beige</td>
+<td>~$8.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/purrpingla-bolsa-de-ropa-sucia-beige-00493832/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Bascula digital</td>
+<td>DESEABLE</td>
+<td>Falabella</td>
+<td>~$12.000</td>
+<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=bascula+digital">Ver en Falabella</a></td>
+</tr>
+<tr>
 <td><strong>Subtotal</strong></td>
 <td></td>
 <td></td>
-<td><strong>$67.000</strong></td>
+<td><strong>$97.000</strong></td>
 <td></td>
 </tr>
 </tbody>
@@ -440,6 +566,20 @@ Prioridades: CRITICO (sin esto no opera) / IMPORTANTE (completa experiencia) / D
 <td>IKEA TARNO (mesa + 2 sillas)</td>
 <td>~$50.000</td>
 <td><a href="https://www.ikea.com/cl/es/p/taernoe-juego-de-balcon-2-sillas-negro-cafe-s69898415/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Macetero + planta artificial</td>
+<td>DESEABLE</td>
+<td>IKEA SOJABOENA + FEJKA</td>
+<td>~$12.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/sojaboena-macetero-blanco-40533586/">Ver macetero</a> / <a href="https://www.ikea.com/cl/es/p/fejka-planta-artificial-interior-exterior-ave-del-paraiso-70610601/">Ver planta</a></td>
+</tr>
+<tr>
+<td>Luces LED decorativas</td>
+<td>DESEABLE</td>
+<td>Sodimac</td>
+<td>~$10.000</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=luces+led+decorativas">Ver en Sodimac</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -534,9 +674,39 @@ Prioridades: CRITICO (sin esto no opera) / IMPORTANTE (completa experiencia) / D
 <td><a href="https://www.ikea.com/cl/es/p/nissedal-espejo-blanco-80605487/">IKEA NISSEDAL</a></td>
 </tr>
 <tr>
+<td>Paraguas x2</td>
+<td>DESEABLE</td>
+<td>$8.000</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=paraguas">Ver en Sodimac</a></td>
+</tr>
+<tr>
+<td>Cooler termico portatil</td>
+<td>DESEABLE</td>
+<td>$15.000</td>
+<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=cooler+termico">Ver en Sodimac</a></td>
+</tr>
+<tr>
+<td>Aspiradora portatil</td>
+<td>DESEABLE</td>
+<td>$30.000</td>
+<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=aspiradora+portatil">Ver en Falabella</a></td>
+</tr>
+<tr>
+<td>Guia turistica Villarrica</td>
+<td>DESEABLE</td>
+<td>$5.000</td>
+<td>Libreria local</td>
+</tr>
+<tr>
+<td>Funda nordica decorativa</td>
+<td>DESEABLE</td>
+<td>$25.000</td>
+<td><a href="https://www.ikea.com/cl/es/cat/ropa-cama-almohadas-tl004/">Ver fundas IKEA</a></td>
+</tr>
+<tr>
 <td><strong>Subtotal</strong></td>
 <td></td>
-<td><strong>$232.000 - $333.000</strong></td>
+<td><strong>$335.000 - $436.000</strong></td>
 <td></td>
 </tr>
 </tbody>
@@ -935,6 +1105,49 @@ Prioridades: CRITICO (sin esto no opera) / IMPORTANTE (completa experiencia) / D
           else if (!detected && reWarning.test(t)) detected = 'warning';
         });
         if (detected) row.classList.add('row-' + detected);
+      });
+    });
+
+    /* ── Priority filter ─────────────────────────────────────────────────── */
+    document.addEventListener('DOMContentLoaded', function() {
+      var hasPriority = false;
+      document.querySelectorAll('table').forEach(function(table) {
+        var headers = table.querySelectorAll('th');
+        var prioCol = -1;
+        headers.forEach(function(th, idx) {
+          if (/prioridad/i.test(th.textContent)) prioCol = idx;
+        });
+        if (prioCol < 0) return;
+        hasPriority = true;
+        table.querySelectorAll('tbody tr, tr').forEach(function(row) {
+          if (row.closest('thead')) return;
+          var cells = row.querySelectorAll('td');
+          if (cells.length <= prioCol) return;
+          var val = cells[prioCol].textContent.trim().toLowerCase();
+          if (/cr[ií]tico/.test(val)) row.setAttribute('data-priority', 'critico');
+          else if (/importante/.test(val)) row.setAttribute('data-priority', 'importante');
+          else if (/deseable/.test(val)) row.setAttribute('data-priority', 'deseable');
+        });
+      });
+
+      var filterBar = document.getElementById('priority-filter');
+      if (!hasPriority || !filterBar) return;
+      filterBar.style.display = '';
+
+      var buttons = filterBar.querySelectorAll('.filter-btn');
+      buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          buttons.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var prio = btn.getAttribute('data-priority');
+          document.querySelectorAll('[data-priority]').forEach(function(row) {
+            if (prio === 'all') {
+              row.style.display = '';
+            } else {
+              row.style.display = row.getAttribute('data-priority') === prio ? '' : 'none';
+            }
+          });
+        });
       });
     });
   </script>
