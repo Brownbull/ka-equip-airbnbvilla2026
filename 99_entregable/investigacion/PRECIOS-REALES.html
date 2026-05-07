@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Investigacion de Precios Reales</title>
+  <title>Investigacion de Precios Reales — V2 Corregida</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({ startOnLoad: false, theme: 'neutral' });</script>
@@ -48,7 +48,7 @@
 </ul>
 <li class="section-title">Presupuesto</li>
 <ul>
-<li><a href="../../99_entregable/presupuesto/PRESUPUESTO-IKEA.html">Presupuesto V3</a></li>
+<li><a href="../../99_entregable/presupuesto/PRESUPUESTO-IKEA.html">Presupuesto V4</a></li>
 </ul>
 <li class="section-title">Revisión</li>
 <ul>
@@ -70,44 +70,56 @@
         <button class="filter-btn" data-priority="importante">Importante</button>
         <button class="filter-btn" data-priority="deseable">Deseable</button>
       </div>
-      <h1 id="investigacion-de-precios-reales">Investigacion de Precios Reales</h1>
+      <h1 id="investigacion-de-precios-reales-v2-corregida">Investigacion de Precios Reales — V2 Corregida</h1>
 <blockquote>
-<p>Precios verificados en sitios de tiendas chilenas el 2026-05-06.
-Todos los links apuntan a paginas reales de productos.
+<p>Precios verificados via Playwright + Google site:search el 2026-05-06.
+Todos los links apuntan a paginas reales de productos (no busquedas).
+Precios con ~ son estimados pendientes verificacion en tienda.
 Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </blockquote>
 <hr>
-<h2 id="colchon-premium-emma-chile">Colchon Premium — Emma Chile</h2>
-<p>El colchon es el item #1 en impacto en reviews Airbnb. Se recomienda no escatimar.</p>
+<h2 id="colchon-comparativa-king-180x200">Colchon — Comparativa King 180x200</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Modelo</th>
 <th>Precio</th>
 <th>Tecnologia</th>
-<th>Garantia</th>
-<th>Link</th>
+<th>Link Directo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Emma Hybrid Premium King 180x200</td>
-<td><strong>~$231.000</strong></td>
-<td>Resortes pocket + viscoelastica</td>
-<td>10 anos, 100 noches prueba</td>
-<td><a href="https://www.emma-colchon.cl/">Ver en Emma</a></td>
+<td>IKEA VALEVAG resortes pocket King</td>
+<td><strong>$239.990</strong></td>
+<td>Resortes pocket, firme</td>
+<td><a href="https://www.ikea.com/cl/es/p/valevag-colchon-de-resortes-pocket-firme-azul-costeno-20470009/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Colchones IKEA 1P 90x200</td>
-<td>$79.990 - $89.990</td>
+<td>Emma Hybrid Premium King</td>
+<td><strong>~$231.000</strong></td>
+<td>Resortes pocket + viscoelastica, 10 anos garantia</td>
+<td><a href="https://www.emma-colchon.cl/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Rosen Tempo Plus King 2.00m</td>
+<td><strong>$689.990</strong></td>
+<td>Premium, garantia Rosen</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/17255045/">Ver producto</a></td>
+</tr>
+<tr>
+<td>IKEA colchones 1P 90x200</td>
+<td><strong>$79.990 - $89.990</strong></td>
 <td>Espuma / resortes</td>
-<td>10 anos, 90 dias prueba</td>
 <td><a href="https://www.ikea.com/cl/es/cat/colchones-bm002/">Ver catalogo</a></td>
 </tr>
 </tbody>
 </table></div>
+<blockquote>
+<p>Emma ($231K) y VALEVAG ($240K) son practicamente el mismo precio. Emma tiene 100 noches prueba + envio gratis.</p>
+</blockquote>
 <hr>
-<h2 id="camas-ikea-chile">Camas — IKEA Chile</h2>
+<h2 id="camas-ikea-chile-alternativas">Camas — IKEA Chile + alternativas</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -119,22 +131,16 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </thead>
 <tbody>
 <tr>
-<td>RAMNEFJALL cama tapizada King</td>
+<td><strong>RAMNEFJALL tapizada</strong></td>
 <td><strong>$199.990</strong></td>
-<td>180x200</td>
+<td>King 180x200</td>
 <td><a href="https://www.ikea.com/cl/es/p/ramnefjaell-cama-tapizada-kilanda-azul-oscuro-s59607488/">Ver producto</a></td>
 </tr>
 <tr>
-<td>NEIDEN cama pino</td>
-<td>~$50.000 c/u</td>
-<td>90x200</td>
-<td><a href="https://www.ikea.com/cl/es/p/neiden-estructura-de-cama-pino-40395245/">Ver producto</a></td>
-</tr>
-<tr>
-<td>SMYGA cama gris claro</td>
-<td>~$50.000 c/u</td>
-<td>90x200</td>
-<td><a href="https://www.ikea.com/cl/es/p/smyga-estructura-de-cama-gris-claro-60480780/">Ver producto</a></td>
+<td>MALM c/4 cajones</td>
+<td><strong>$499.990</strong></td>
+<td>King 180x200</td>
+<td><a href="https://www.ikea.com/cl/es/p/malm-cama-estructural-con-4-cajones-negro-loenset-s99019227/">Ver producto</a></td>
 </tr>
 <tr>
 <td>TUFFING camarote metal</td>
@@ -143,41 +149,55 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <td><a href="https://www.ikea.com/cl/es/p/tuffing-estructura-de-camarote-gris-osc-00239233/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Todas las camas King</td>
-<td>Desde $199.990</td>
-<td>180x200</td>
-<td><a href="https://www.ikea.com/cl/es/cat/camas-dobles-16284/">Ver catalogo</a></td>
+<td>SMYGA tapizada gris claro</td>
+<td><strong>$219.990</strong></td>
+<td>Individual</td>
+<td><a href="https://www.ikea.com/cl/es/p/smyga-estructura-de-cama-gris-claro-60480780/">Ver producto</a></td>
+</tr>
+<tr>
+<td>NEIDEN pino (+LUROY somier)</td>
+<td><strong>$99.990</strong></td>
+<td>140x200</td>
+<td><a href="https://www.ikea.com/cl/es/p/neiden-estructura-de-cama-pino-luroey-s39248608/">Ver producto</a></td>
+</tr>
+<tr>
+<td>NEIDEN pino (solo estructura)</td>
+<td>~$50.000 c/u (est.)</td>
+<td>90x200</td>
+<td><a href="https://www.ikea.com/cl/es/p/neiden-estructura-de-cama-pino-40395245/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
+<blockquote>
+<p>MALM King ($500K) descartada — demasiado cara. RAMNEFJALL ($200K) es la opcion King mas economica confirmada.
+SMYGA individual ($220K) — demasiado cara para dormitorio secundario. Solo Premium.
+NEIDEN 90x200 precio es estimado; la version encontrada fue 140x200 a $100K.</p>
+</blockquote>
 <hr>
-<h2 id="sofa-cama-bk-design">Sofa-Cama — BK Design</h2>
+<h2 id="sofa-cama">Sofa-Cama</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Producto</th>
 <th>Precio</th>
-<th>Caracteristica</th>
 <th>Link Directo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>BK Design Toscana</td>
-<td><strong>$989.990</strong></td>
-<td>Sofa-cama premium</td>
-<td><a href="https://www.bkdesign.cl/products/sofa-cama-toscana">Ver producto</a></td>
+<td>IKEA HAMMARN gris/negro</td>
+<td><strong>$99.990</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/hammarn-sofa-cama-knisa-gris-osc-negro-90354327/">Ver producto</a></td>
 </tr>
 <tr>
-<td>IKEA HAMMARN (alternativa economica)</td>
-<td>$149.990</td>
-<td>Gris/negro, plegable</td>
-<td><a href="https://www.ikea.com/cl/es/p/hammarn-sofa-cama-knisa-gris-osc-negro-90354327/">Ver producto</a></td>
+<td>BK Design Toscana</td>
+<td><strong>$989.990</strong></td>
+<td><a href="https://www.bkdesign.cl/products/sofa-cama-toscana">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
 <hr>
-<h2 id="mesa-y-sillas-ikea-rosentorp">Mesa y Sillas — IKEA ROSENTORP</h2>
+<h2 id="mesa-y-sillas">Mesa y Sillas</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -189,22 +209,33 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </thead>
 <tbody>
 <tr>
+<td>VIHALS mesa fija blanco</td>
+<td><strong>$69.990</strong></td>
+<td>125x74 cm</td>
+<td><a href="https://www.ikea.com/cl/es/p/vihals-mesa-blanco-blanco-s39578509/">Ver producto</a></td>
+</tr>
+<tr>
 <td>ROSENTORP mesa extensible</td>
 <td><strong>$449.990</strong></td>
 <td>110/155 cm, blanco</td>
 <td><a href="https://www.ikea.com/cl/es/p/rosentorp-mesa-extensible-blanco-80568239/">Ver producto</a></td>
 </tr>
 <tr>
-<td>ROSENTORP silla blanca x6</td>
-<td><strong>$60.000 c/u</strong> ($360K total)</td>
-<td>Plastico/madera blanco</td>
+<td>ADDE silla blanca</td>
+<td><strong>$12.990</strong></td>
+<td>Plastico</td>
+<td><a href="https://www.ikea.com/cl/es/p/adde-silla-blanco-10219178/">Ver producto</a></td>
+</tr>
+<tr>
+<td>ROSENTORP silla blanca</td>
+<td><strong>$60.000</strong> c/u</td>
+<td>Plastico/madera</td>
 <td><a href="https://www.ikea.com/cl/es/p/rosentorp-silla-blanco-80569998/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Total mesa + 6 sillas: $809.990</strong></p>
 <hr>
-<h2 id="veladores-ikea-chile">Veladores — IKEA Chile</h2>
+<h2 id="veladores">Veladores</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -216,11 +247,19 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <tbody>
 <tr>
 <td>KULLEN velador 2 cajones blanco</td>
-<td><strong>$30.000</strong></td>
+<td><strong>~$30.000</strong></td>
 <td><a href="https://www.ikea.com/cl/es/p/kullen-velador-con-2-cajones-blanco-80309241/">Ver producto</a></td>
+</tr>
+<tr>
+<td>HEMNES velador 2 cajones blanco</td>
+<td><strong>$99.990</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/hemnes-velador-con-2-cajones-tinte-blanco-80242627/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
+<blockquote>
+<p>HEMNES a $100K es mas del doble que KULLEN. Recomendado solo para Dorm 1 tier medio/alto.</p>
+</blockquote>
 <hr>
 <h2 id="iluminacion-apliques-de-pared">Iluminacion — Apliques de Pared</h2>
 <div class="table-wrapper"><table>
@@ -228,27 +267,24 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <tr>
 <th>Producto</th>
 <th>Precio</th>
-<th>Tipo</th>
 <th>Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>NYMANE mural doble con cable</td>
-<td><strong>~$10.000 c/u</strong></td>
-<td>Aplique pared, blanco</td>
-<td><a href="https://www.ikea.com/cl/es/p/nymane-lampara-mural-doble-con-cable-blanco-80524154/">Ver producto</a></td>
-</tr>
-<tr>
 <td>FUBBLA LED blanco</td>
 <td><strong>~$7.500 c/u</strong></td>
-<td>Aplique pared LED, blanco</td>
 <td><a href="https://www.ikea.com/cl/es/p/fubbla-lampara-mural-led-blanco-50524317/">Ver producto</a></td>
+</tr>
+<tr>
+<td>NYMANE mural doble con cable</td>
+<td><strong>~$10.000 c/u</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/nymane-lampara-mural-doble-con-cable-blanco-80524154/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
 <hr>
-<h2 id="calefactores-falabella">Calefactores — Falabella</h2>
+<h2 id="calefactores">Calefactores</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -263,25 +299,18 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <td>Thorben Thor IRP 1000 WiFi</td>
 <td>1000W</td>
 <td><strong>$139.990</strong></td>
-<td><a href="https://www.falabella.com/falabella-cl/product/130194519/">Ver en Falabella</a></td>
+<td><a href="https://www.falabella.com/falabella-cl/product/130194519/">Ver producto</a></td>
 </tr>
 <tr>
 <td>Betterlife Cristal 2000W WiFi</td>
 <td>2000W</td>
 <td><strong>~$100.000</strong></td>
-<td><a href="https://www.falabella.com/falabella-cl/product/152386306/">Ver en Falabella</a></td>
-</tr>
-<tr>
-<td>Betterlife 1000W WiFi (alternativa)</td>
-<td>1000W</td>
-<td>~$80.000</td>
-<td><a href="https://www.falabella.com/falabella-cl/product/152377143/">Ver en Falabella</a></td>
+<td><a href="https://www.falabella.com/falabella-cl/product/152386306/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
-<p>Ver investigacion detallada en <a href="CALEFACCION.html">CALEFACCION.md</a>.</p>
 <hr>
-<h2 id="cortinas-ikea-chile">Cortinas — IKEA Chile</h2>
+<h2 id="cortinas">Cortinas</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -293,109 +322,206 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </thead>
 <tbody>
 <tr>
-<td>FRIDANS roller blackout blanco (dormitorios)</td>
+<td>FRIDANS roller blackout blanco</td>
 <td>Roller</td>
-<td>~$30.000 - $35.000</td>
+<td>~$30-35K</td>
 <td><a href="https://www.ikea.com/cl/es/p/fridans-cortina-roller-black-out-blanco-50396862/">Ver producto</a></td>
 </tr>
 <tr>
-<td>FRIDANS roller blackout blanco (living)</td>
+<td>FRIDANS roller living</td>
 <td>Roller</td>
-<td>~$35.000</td>
+<td>~$35K</td>
 <td><a href="https://www.ikea.com/cl/es/p/fridans-cortina-roller-black-out-blanco-10396864/">Ver producto</a></td>
 </tr>
 <tr>
-<td>BENGTA blackout tela + barra</td>
+<td>BENGTA blackout tela + barra HUGAD</td>
 <td>Tela</td>
-<td>~$40.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/bengta-cortina-black-out-1-pieza-beige-con-cinta-de-fruncir-50491056/">Ver cortina</a> / <a href="https://www.ikea.com/cl/es/p/hugad-barra-de-cortina-blanco-30217140/">Ver barra HUGAD</a></td>
+<td>~$40K</td>
+<td><a href="https://www.ikea.com/cl/es/p/bengta-cortina-black-out-1-pieza-beige-con-cinta-de-fruncir-50491056/">Ver cortina</a> / <a href="https://www.ikea.com/cl/es/p/hugad-barra-de-cortina-blanco-30217140/">Ver barra</a></td>
 </tr>
 <tr>
 <td>GINSTMOTT blanco ojetes + barra</td>
 <td>Tela</td>
-<td>~$35.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/ginstmott-cortina-1-par-blanco-con-ojetes-80597166/">Ver cortina</a> / <a href="https://www.ikea.com/cl/es/p/hugad-barra-de-cortina-blanco-30217140/">Ver barra HUGAD</a></td>
+<td>~$35K</td>
+<td><a href="https://www.ikea.com/cl/es/p/ginstmott-cortina-1-par-blanco-con-ojetes-80597166/">Ver cortina</a> / <a href="https://www.ikea.com/cl/es/p/hugad-barra-de-cortina-blanco-30217140/">Ver barra</a></td>
 </tr>
 <tr>
-<td>LILL velo blanco (ventanal living)</td>
+<td>LILL velo blanco</td>
 <td>Velo</td>
-<td>~$8.000</td>
+<td>~$8K</td>
 <td><a href="https://www.ikea.com/cl/es/p/lill-cortina-de-velo-blanco-90111980/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
 <hr>
-<h2 id="cocina-tramontina-ikea">Cocina — Tramontina + IKEA</h2>
+<h2 id="cafetera-precios-verificados">Cafetera — Precios verificados</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Tienda</th>
+<th>Link Directo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nespresso Essenza Mini (blanca + 20 caps)</td>
+<td><strong>$39.990</strong></td>
+<td>Nespresso</td>
+<td><a href="https://www.nespresso.com/cl/es/order/machines/original/essenza-mini-blanca-20caps">Ver producto</a></td>
+</tr>
+<tr>
+<td>Nespresso Vertuo (Mate Negra promo)</td>
+<td><strong>$39.990</strong></td>
+<td>Nespresso</td>
+<td><a href="https://www.nespresso.com/cl/es/order/machines/vertuo/vertuo-mate-negra-promo">Ver producto</a></td>
+</tr>
+<tr>
+<td>Prensa francesa Benetton 800ml</td>
+<td><strong>$13.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/882514624/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Bialetti Moka La Mokina 40ml</td>
+<td><strong>$38.000</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/128919805/">Ver producto</a></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>Vertuo a $40K es precio promo vigente — normalmente $120K+. Excelente oportunidad.
+Bialetti La Mokina es la version miniatura (40ml = 1 espresso). Verificar modelos mas grandes en tienda.</p>
+</blockquote>
+<hr>
+<h2 id="cocina-tramontina-ikea-precios-verificados">Cocina — Tramontina + IKEA (precios verificados)</h2>
 <h3 id="ollas-y-sartenes">Ollas y sartenes</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Producto</th>
 <th>Precio</th>
+<th>Tienda</th>
 <th>Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Tramontina ollas acero inoxidable</td>
-<td>~$50.000</td>
-<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=tramontina+ollas+acero+inoxidable">Ver en Falabella</a></td>
-</tr>
-<tr>
-<td>Tramontina sarten acero inoxidable</td>
-<td>~$25.000</td>
-<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=tramontina+sarten+acero+inoxidable">Ver en Falabella</a></td>
-</tr>
-<tr>
-<td>IKEA ANNONS bateria 5pzs (alternativa)</td>
+<td>IKEA ANNONS bateria 5pzs</td>
 <td>~$20.000</td>
+<td>IKEA</td>
 <td><a href="https://www.ikea.com/cl/es/p/annons-bateria-de-cocina-5-piezas-vidrio-acero-inoxidable-90207402/">Ver producto</a></td>
 </tr>
 <tr>
-<td>IKEA 365+ bateria 6pzs (alternativa)</td>
+<td>IKEA 365+ bateria 6pzs</td>
 <td>~$40.000</td>
+<td>IKEA</td>
 <td><a href="https://www.ikea.com/cl/es/p/ikea-365-bateria-de-cocina-6-piezas-acero-inoxidable-10484230/">Ver producto</a></td>
 </tr>
 <tr>
 <td>IKEA 365+ sarten antiadherente</td>
 <td>~$8.000</td>
+<td>IKEA</td>
 <td><a href="https://www.ikea.com/cl/es/p/ikea-365-sarten-acero-inoxidable-revestimiento-antiadherente-40484246/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Tramontina Paris sarten 30cm Starflon</td>
+<td><strong>$40.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/142627366/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
-<h3 id="cubiertos-utensilios-vajilla">Cubiertos, utensilios, vajilla</h3>
+<blockquote>
+<p>Tramontina Solar "set ollas" no encontrado en Falabella. Solo olla a presion Solar 22cm a $302K (producto distinto).</p>
+</blockquote>
+<h3 id="cuchillos">Cuchillos</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Producto</th>
 <th>Precio</th>
+<th>Tienda</th>
 <th>Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Tramontina cubiertos 8 personas</td>
-<td>$35K - $45K</td>
-<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=tramontina+cubiertos">Ver en Falabella</a></td>
-</tr>
-<tr>
-<td>GRUNKA set utensilios 4pzs acero</td>
-<td>~$8.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/grunka-set-utensilios-de-cocina-4-piezas-acero-inoxidable-60100335/">Ver producto</a></td>
-</tr>
-<tr>
-<td>ANDLIG set cuchillos 3pzs</td>
+<td>IKEA ANDLIG set 3 cuchillos</td>
 <td>~$6.000</td>
+<td>IKEA</td>
 <td><a href="https://www.ikea.com/cl/es/p/aendlig-set-de-cuchillos-3-piezas-gris-claro-blanco-30257626/">Ver producto</a></td>
 </tr>
 <tr>
-<td>APTITLIG tabla picar bambu</td>
-<td>~$5.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/aptitlig-tabla-para-picar-bambu-60233426/">Ver producto</a></td>
+<td>Tramontina Century cuchillo chef 8"</td>
+<td><strong>$14.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/116471943/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Tramontina set 4 cuchillos inox multiuso</td>
+<td><strong>$22.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/110233501/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
-<h3 id="vajilla-ikea-granel-8-unidades">Vajilla IKEA granel (8 unidades)</h3>
+<h3 id="cubiertos-y-utensilios">Cubiertos y utensilios</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Tienda</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IKEA MOPSIG 16 piezas</td>
+<td><strong>$3.990</strong></td>
+<td>IKEA</td>
+<td><a href="https://www.ikea.com/cl/es/p/mopsig-set-cubiertos-16-piezas-00343003/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Tramontina cubiertos 16 pzs Superstore</td>
+<td><strong>$19.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/113040422/">Ver producto</a></td>
+</tr>
+<tr>
+<td>IKEA GRUNKA set utensilios 4pzs</td>
+<td>~$8.000</td>
+<td>IKEA</td>
+<td><a href="https://www.ikea.com/cl/es/p/grunka-set-utensilios-de-cocina-4-piezas-acero-inoxidable-60100335/">Ver producto</a></td>
+</tr>
+<tr>
+<td>IKEA APTITLIG tabla picar bambu</td>
+<td>~$5.000</td>
+<td>IKEA</td>
+<td><a href="https://www.ikea.com/cl/es/p/aptitlig-tabla-para-picar-bambu-60233426/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Colador escurridor inox 20cm</td>
+<td><strong>$24.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/150149406/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Sacacorchos sommelier 2 tiempos</td>
+<td>precio pendiente</td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/124133888/">Ver producto</a></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>MOPSIG a $4K es excelente valor para 16 piezas. Colador a $25K es mas caro de lo esperado.
+Tramontina "Havana 24 piezas" no encontrado — el resultado fue "Superstore 16 piezas" a $20K.</p>
+</blockquote>
+<h3 id="vajilla-ikea-verificada">Vajilla IKEA (verificada)</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -421,12 +547,37 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <td><a href="https://www.ikea.com/cl/es/p/oftast-bowl-blanco-80258915/">Ver producto</a></td>
 </tr>
 <tr>
+<td>GLADELIG plato gres gris</td>
+<td><strong>$3.990</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/gladelig-plato-gris-10600756/">Ver producto</a></td>
+</tr>
+<tr>
+<td>GLADELIG bowl gres gris</td>
+<td><strong>$2.990</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/gladelig-bowl-gris-40600750/">Ver producto</a></td>
+</tr>
+<tr>
+<td>SVALKA copa vino (6 und)</td>
+<td><strong>$6.990/6</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/svalka-copa-de-vino-vidrio-incoloro-00473023/">Ver producto</a></td>
+</tr>
+<tr>
+<td>SVALKA copa espumante (6 und)</td>
+<td><strong>$5.990/6</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/svalka-copa-de-espumante-vidrio-incoloro-50015122/">Ver producto</a></td>
+</tr>
+<tr>
+<td>IKEA 365 vaso vidrio (6 und)</td>
+<td><strong>$7.990/6</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/ikea-365-vaso-vidrio-incoloro-60279711/">Ver producto</a></td>
+</tr>
+<tr>
 <td>POKAL vaso vidrio</td>
-<td>~$1.250</td>
+<td>~$1.300</td>
 <td><a href="https://www.ikea.com/cl/es/p/pokal-vaso-vidrio-incoloro-10270478/">Ver producto</a></td>
 </tr>
 <tr>
-<td>TILLBRINGARE jarra vidrio 1.7L</td>
+<td>TILLBRINGARE jarra 1.7L</td>
 <td>~$5.000</td>
 <td><a href="https://www.ikea.com/cl/es/p/tillbringare-jarra-vidrio-incoloro-90362407/">Ver producto</a></td>
 </tr>
@@ -434,6 +585,134 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <td>BLANDA MATT ensaladera bambu</td>
 <td>~$5.000</td>
 <td><a href="https://www.ikea.com/cl/es/p/blanda-matt-ensaladera-bambu-20214340/">Ver producto</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="tv-y-electronica-precios-verificados">TV y Electronica — Precios verificados</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Tienda</th>
+<th>Link Directo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Samsung Crystal UHD 50" U8000F 4K (2025)</td>
+<td><strong>$289.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/80150573/">Ver producto</a></td>
+</tr>
+<tr>
+<td>LG OLED 55" OLED55C5PSA 4K WebOS</td>
+<td><strong>$939.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/80523452/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Amazon Echo Dot 5 Gen Alexa</td>
+<td><strong>$79.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/17193750/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Google Nest Mini gris</td>
+<td><strong>$54.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/110370279/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Sonos One SL Bluetooth WiFi Negro</td>
+<td><strong>$269.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/145614479/">Ver producto</a></td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="bano-y-personal-precios-verificados">Bano y Personal — Precios verificados</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Tienda</th>
+<th>Link Directo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remington secador D27A-220R</td>
+<td><strong>$34.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/17205487/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Bata bano algodon Elements Co (talla M)</td>
+<td><strong>$49.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/15508185/">Ver producto</a></td>
+</tr>
+<tr>
+<td>Xiaomi Robot Vacuum X20 Pro 7000pa</td>
+<td><strong>$359.990</strong></td>
+<td>Falabella</td>
+<td><a href="https://www.falabella.com/falabella-cl/product/17459080/">Ver producto</a></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="accesorios-bano-ikea">Accesorios bano IKEA</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LUDDHAGTORN cortina ducha</td>
+<td>~$6.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/luddhagtorn-cortina-de-bano-gris-10613688/">Ver producto</a></td>
+</tr>
+<tr>
+<td>BOTAREN barral cortina</td>
+<td>~$4.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/botaren-barra-para-cortina-de-bano-blanco-90314973/">Ver producto</a></td>
+</tr>
+<tr>
+<td>BROGRUND portarrollo</td>
+<td>~$3.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/brogrund-portarrollos-acero-inoxidable-00328540/">Ver producto</a></td>
+</tr>
+<tr>
+<td>TACKAN dispensador jabon</td>
+<td>~$3.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tackan-dispensador-de-jabon-blanco-90322303/">Ver producto</a></td>
+</tr>
+<tr>
+<td>BOLMEN escobilla WC</td>
+<td>~$3.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/bolmen-portaescobilla-de-bano-blanco-40574435/">Ver producto</a></td>
+</tr>
+<tr>
+<td>TISKEN organizador ducha</td>
+<td>~$5.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tisken-estante-esquinero-con-ventosa-blanco-20400304/">Ver producto</a></td>
+</tr>
+<tr>
+<td>FNISS basurero</td>
+<td>~$3.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/fniss-basurero-blanco-40295439/">Ver producto</a></td>
+</tr>
+<tr>
+<td>PURRPINGLA bolsa ropa sucia</td>
+<td><strong>$14.990</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/purrpingla-bolsa-de-ropa-sucia-beige-00493832/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -493,13 +772,13 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <td><a href="https://www.ikea.com/cl/es/p/smasporre-plumon-4-estaciones-90621830/">Ver producto</a></td>
 </tr>
 <tr>
-<td>SOTNATFJARIL cubrecolchon impermeable</td>
+<td>SOTNATFJARIL cubrecolchon</td>
 <td>180x200</td>
 <td><strong>$34.990</strong></td>
 <td><a href="https://www.ikea.com/cl/es/p/sotnaetfjaeril-cubrecolchon-impermeable-50531290/">Ver producto</a></td>
 </tr>
 <tr>
-<td>SOTNATFJARIL cubrecolchon impermeable</td>
+<td>SOTNATFJARIL cubrecolchon</td>
 <td>90x200</td>
 <td><strong>$19.990</strong></td>
 <td><a href="https://www.ikea.com/cl/es/p/sotnaetfjaeril-cubrecolchon-impermeable-10531292/">Ver producto</a></td>
@@ -524,13 +803,7 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </tr>
 </tbody>
 </table></div>
-<blockquote>
-<p>Cama King = 180x200 cm. DVALA bajera blanco SI existe en 180x200 ($11.990). Cubrecolchon SOTNATFJARIL 180x200 = medida exacta.</p>
-</blockquote>
-<h3 id="tier-b-hohos-300h-algodon-mejor-calidad">Tier B: Hohos 300h algodon (Mejor Calidad)</h3>
-<blockquote>
-<p>Juego Hohos King: bajera 180x200x35 + encimera 280x280 + 2 fundas 50x90.</p>
-</blockquote>
+<h3 id="tier-b-hohos-300h-algodon">Tier B: Hohos 300h algodon</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -551,7 +824,7 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <td><a href="https://www.hohos.cl/">Ver en Hohos</a></td>
 </tr>
 <tr>
-<td>Hohos Percal 250h King (juego, alternativa)</td>
+<td>Hohos Percal 250h King (juego)</td>
 <td><strong>$74.900</strong></td>
 <td><a href="https://www.hohos.cl/">Ver en Hohos</a></td>
 </tr>
@@ -567,7 +840,7 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </tr>
 </tbody>
 </table></div>
-<h3 id="tier-c-hohos-500h-algodon-egipcio-calidad-hotelera">Tier C: Hohos 500h algodon egipcio (Calidad Hotelera)</h3>
+<h3 id="tier-c-hohos-500h-algodon-egipcio">Tier C: Hohos 500h algodon egipcio</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -578,7 +851,7 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </thead>
 <tbody>
 <tr>
-<td>Hohos Saten 500h algodon egipcio King (juego)</td>
+<td>Hohos Saten 500h algodon egipcio King</td>
 <td><strong>$136.900</strong></td>
 <td><a href="https://www.hohos.cl/">Ver en Hohos</a></td>
 </tr>
@@ -587,14 +860,9 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 <td><strong>$69.990</strong></td>
 <td><a href="https://mashini.cl/products/plumon-2-plazas-pluma-de-ganso">Ver producto</a></td>
 </tr>
-<tr>
-<td>Hohos plumon ganso A1 King (alternativa premium)</td>
-<td><strong>$239.500 - $389.500</strong></td>
-<td><a href="https://www.hohos.cl/">Ver en Hohos</a></td>
-</tr>
 </tbody>
 </table></div>
-<h3 id="productos-complementarios-todos-los-tiers">Productos complementarios (todos los tiers)</h3>
+<h3 id="toallas-hoteleras">Toallas hoteleras</h3>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -605,30 +873,19 @@ Estructura tributaria supuesta: DFL2 (Persona Natural). Precio es rey.</p>
 </thead>
 <tbody>
 <tr>
-<td>Mashini toalla hotel 600g/m² 70x150 blanco</td>
+<td>Mashini toalla hotel 600g 70x150</td>
 <td><strong>$15.590</strong></td>
 <td><a href="https://mashini.cl/products/toalla-hotel-600-g-m2-70x150cm-blanco">Ver producto</a></td>
 </tr>
 <tr>
-<td>Mashini toalla hotel 600g/m² 45x90 blanco</td>
+<td>Mashini toalla hotel 600g 45x90</td>
 <td><strong>$6.590</strong></td>
 <td><a href="https://mashini.cl/products/toalla-hotel-600-g-m2-45x90cm-blanco">Ver producto</a></td>
-</tr>
-<tr>
-<td>Mashini cubrecolchon 2P ajustable blanco</td>
-<td><strong>$19.990</strong></td>
-<td><a href="https://mashini.cl/products/cubrecolchon-ajust-mashini-2-plazas-blanco-814358">Ver producto</a></td>
-</tr>
-<tr>
-<td>3Angeli sabanas "1800 hilos" (microfibra)</td>
-<td><strong>~$40-50K/juego</strong></td>
-<td><a href="https://3angeli.cl/collections/sabanas">Ver en 3Angeli</a></td>
 </tr>
 </tbody>
 </table></div>
 <blockquote>
-<p>Nota: 3Angeli "1800 hilos" son microfibra, no algodon real — no comparables con Hohos 300-500h algodon.
-Precios Mashini con descuento actual (~40%). Linea completa: <a href="https://mashini.cl/collections/linea-hotel">Mashini Linea Hotel</a></p>
+<p>Nota: 3Angeli "1800 hilos" (~$40-50K/juego) son microfibra — no comparables con algodon real Hohos.</p>
 </blockquote>
 <h3 id="mayorista-kalindi-textiles">Mayorista — Kalindi Textiles</h3>
 <div class="table-wrapper"><table>
@@ -644,22 +901,14 @@ Precios Mashini con descuento actual (~40%). Linea completa: <a href="https://ma
 <td><a href="https://www.kalindi.cl/">kalindi.cl</a></td>
 </tr>
 <tr>
-<td>Productos</td>
-<td>Sabanas 144/200/300 hilos, toallas, plumones, batas</td>
-</tr>
-<tr>
-<td>Precios</td>
-<td>No publicados — cotizacion directa</td>
-</tr>
-<tr>
 <td>Contacto</td>
 <td>ventas@kalindi.cl / WhatsApp +56 9 7292 1859</td>
 </tr>
 </tbody>
 </table></div>
-<p>Fabricante nacional. Puede ofrecer mejores precios por volumen para compras recurrentes Airbnb.</p>
+<p>Fabricante nacional. Cotizacion directa para precios por volumen.</p>
 <hr>
-<h2 id="bano-ikea-chile">Bano — IKEA Chile</h2>
+<h2 id="perchas">Perchas</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -670,82 +919,49 @@ Precios Mashini con descuento actual (~40%). Linea completa: <a href="https://ma
 </thead>
 <tbody>
 <tr>
-<td>LUDDHAGTORN cortina ducha</td>
-<td>~$6.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/luddhagtorn-cortina-de-bano-gris-10613688/">Ver producto</a></td>
+<td>FJANTIG plastico negro</td>
+<td>~$500 c/u</td>
+<td><a href="https://www.ikea.com/cl/es/p/fjantig-percha-negro-60347102/">Ver producto</a></td>
 </tr>
 <tr>
-<td>BOTAREN barral cortina bano</td>
-<td>~$4.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/botaren-barra-para-cortina-de-bano-blanco-90314973/">Ver producto</a></td>
-</tr>
-<tr>
-<td>BROGRUND portarrollo</td>
-<td>~$3.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/brogrund-portarrollos-acero-inoxidable-00328540/">Ver producto</a></td>
-</tr>
-<tr>
-<td>TACKAN dispensador jabon</td>
-<td>~$3.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/tackan-dispensador-de-jabon-blanco-90322303/">Ver producto</a></td>
-</tr>
-<tr>
-<td>BOLMEN escobilla WC</td>
-<td>~$3.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/bolmen-portaescobilla-de-bano-blanco-40574435/">Ver producto</a></td>
-</tr>
-<tr>
-<td>TISKEN organizador ducha</td>
-<td>~$5.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/tisken-estante-esquinero-con-ventosa-blanco-20400304/">Ver producto</a></td>
-</tr>
-<tr>
-<td>FNISS basurero</td>
-<td>~$3.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/fniss-basurero-blanco-40295439/">Ver producto</a></td>
+<td>BANGBULA madera negro (2 und)</td>
+<td><strong>$2.990/2</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/baengbula-percha-negro-20411543/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
+<blockquote>
+<p>BUMERANG no disponible en IKEA Chile. BANGBULA es el reemplazo ($1.5K c/u).</p>
+</blockquote>
 <hr>
-<h2 id="electrodomesticos-falabella-sodimac">Electrodomesticos — Falabella / Sodimac</h2>
+<h2 id="alfombras">Alfombras</h2>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
-<th>Item</th>
-<th>Precio Estimado</th>
+<th>Producto</th>
+<th>Precio</th>
+<th>Tamano</th>
 <th>Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Refrigerador No Frost ~250L</td>
-<td>$300.000 - $350.000</td>
-<td><a href="https://www.falabella.com/falabella-cl/category/cat4074/Refrigerador-no-frost">Ver en Falabella</a></td>
+<td>TIPHEDE natural/negro</td>
+<td><strong>$12.990</strong></td>
+<td>120x180</td>
+<td><a href="https://www.ikea.com/cl/es/p/tiphede-alfombra-natural-negro-40456757/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Lavadora-secadora 8kg</td>
-<td>~$450.000</td>
-<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=lavadora+secadora">Ver en Falabella</a></td>
+<td>TIPHEDE negro/natural</td>
+<td>~$40.000</td>
+<td>155x220</td>
+<td><a href="https://www.ikea.com/cl/es/p/tiphede-alfombra-negro-natural-20470047/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Microondas 20L</td>
-<td>~$50.000</td>
-<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=microondas+20+litros">Ver en Falabella</a></td>
-</tr>
-<tr>
-<td>TV Smart 50"</td>
-<td>~$200.000 (o ~$140K CyberDay)</td>
-<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=smart+tv+50+pulgadas">Ver en Falabella</a></td>
-</tr>
-<tr>
-<td>Hervidero electrico</td>
+<td>TIPHEDE natural/negro</td>
 <td>~$10.000</td>
-<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=hervidero+electrico">Ver en Sodimac</a></td>
-</tr>
-<tr>
-<td>Tostadora</td>
-<td>~$12.000</td>
-<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=tostadora">Ver en Sodimac</a></td>
+<td>60x90 (bano)</td>
+<td><a href="https://www.ikea.com/cl/es/p/tiphede-alfombra-natural-negro-40592825/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -761,73 +977,101 @@ Precios Mashini con descuento actual (~40%). Linea completa: <a href="https://ma
 </thead>
 <tbody>
 <tr>
-<td>Perchas FJANTIG</td>
-<td>~$500 c/u</td>
-<td><a href="https://www.ikea.com/cl/es/p/fjantig-percha-negro-60347102/">Ver producto IKEA</a></td>
-</tr>
-<tr>
 <td>MULIG tendedero plegable</td>
 <td>~$8.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/mulig-tendedero-de-ropa-plegable-blanco-50228755/">Ver producto IKEA</a></td>
+<td><a href="https://www.ikea.com/cl/es/p/mulig-tendedero-de-ropa-plegable-blanco-50228755/">Ver producto</a></td>
 </tr>
 <tr>
 <td>PEPPRIG set limpieza</td>
 <td>~$15.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/pepprig-set-de-limpieza-azul-amarillo-80567621/">Ver producto IKEA</a></td>
+<td><a href="https://www.ikea.com/cl/es/p/pepprig-set-de-limpieza-azul-amarillo-80567621/">Ver producto</a></td>
 </tr>
 <tr>
 <td>NISSEDAL espejo 65x150</td>
 <td>~$20.000</td>
-<td><a href="https://www.ikea.com/cl/es/p/nissedal-espejo-blanco-80605487/">Ver producto IKEA</a></td>
+<td><a href="https://www.ikea.com/cl/es/p/nissedal-espejo-blanco-80605487/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Adaptadores enchufe x6</td>
-<td>~$20.000</td>
-<td><a href="https://listado.mercadolibre.cl/adaptador-enchufe-universal">Ver en MercadoLibre</a></td>
+<td>NISSAFORS carro rodante</td>
+<td><strong>$14.990</strong></td>
+<td><a href="https://www.ikea.com/cl/es/p/nissafors-carro-negro-10602982/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Zapatillas USB x3</td>
-<td>~$24.000</td>
-<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=zapatilla+electrica+usb">Ver en Sodimac</a></td>
+<td>SKUBB cajas organizador x6</td>
+<td>~$15.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/skubb-cajas-set-de-6-blanco-00428549/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Candado bodega</td>
+<td>TROMMA reloj pared</td>
+<td>~$8.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/tromma-reloj-de-pared-blanco-30557078/">Ver producto</a></td>
+</tr>
+<tr>
+<td>OSTBIT bandeja bambu</td>
+<td>~$8.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/ostbit-bandeja-bambu-30452991/">Ver producto</a></td>
+</tr>
+<tr>
+<td>RESGODS bandeja cama bambu</td>
 <td>~$12.000</td>
-<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=candado">Ver en Sodimac</a></td>
+<td><a href="https://www.ikea.com/cl/es/p/resgods-bandeja-de-cama-bambu-30444468/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Plancha + tabla planchar</td>
-<td>~$40.000</td>
-<td><a href="https://www.sodimac.cl/sodimac-cl/search/?Ntt=plancha+ropa">Ver en Sodimac</a></td>
+<td>FINSMAK portavela vidrio</td>
+<td>~$1.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/finsmak-portavela-vidrio-incoloro-00470982/">Ver producto</a></td>
 </tr>
 <tr>
-<td>Secador pelo</td>
-<td>~$25.000</td>
-<td><a href="https://www.falabella.com/falabella-cl/search?Ntt=secador+pelo">Ver en Falabella</a></td>
+<td>RODALM marco negro</td>
+<td>~$10.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/roedalm-marco-negro-20548918/">Ver producto</a></td>
+</tr>
+<tr>
+<td>JORDKASTANJ cojin gris</td>
+<td>~$8.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/jordkastanj-cojin-gris-80587921/">Ver producto</a></td>
+</tr>
+<tr>
+<td>GUNNEMOR manta hueso/taupe</td>
+<td>~$20.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/gunnemor-manta-color-hueso-taupe-10515466/">Ver producto</a></td>
+</tr>
+<tr>
+<td>FEJKA planta artificial</td>
+<td>~$8.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/fejka-planta-artificial-interior-exterior-ave-del-paraiso-70610601/">Ver producto</a></td>
+</tr>
+<tr>
+<td>TARNO set bistro plegable</td>
+<td>~$50.000</td>
+<td><a href="https://www.ikea.com/cl/es/p/taernoe-juego-de-balcon-2-sillas-negro-cafe-s69898415/">Ver producto</a></td>
 </tr>
 </tbody>
 </table></div>
 <hr>
 <blockquote>
-<p>Siguiente: ver <a href="CALEFACCION.html">Calefaccion</a> y <a href="CERRADURA-INTELIGENTE.html">Cerradura Inteligente</a> para los items especializados.</p>
+<p>Siguiente: ver <a href="CALEFACCION.html">Calefaccion</a> y <a href="CERRADURA-INTELIGENTE.html">Cerradura Inteligente</a> para investigaciones especializadas.</p>
 </blockquote>
     </main>
 
     <aside class="jump-bar no-print">
       <h4>En esta pagina</h4>
       <ul class="jump-list">
-<li><a href="#colchon-premium-emma-chile">Colchon Premium — Emma Chile</a></li>
-<li><a href="#camas-ikea-chile">Camas — IKEA Chile</a></li>
-<li><a href="#sofa-cama-bk-design">Sofa-Cama — BK Design</a></li>
-<li><a href="#mesa-y-sillas-ikea-rosentorp">Mesa y Sillas — IKEA ROSENTORP</a></li>
-<li><a href="#veladores-ikea-chile">Veladores — IKEA Chile</a></li>
+<li><a href="#colchon-comparativa-king-180x200">Colchon — Comparativa King 180x200</a></li>
+<li><a href="#camas-ikea-chile-alternativas">Camas — IKEA Chile + alternativas</a></li>
+<li><a href="#sofa-cama">Sofa-Cama</a></li>
+<li><a href="#mesa-y-sillas">Mesa y Sillas</a></li>
+<li><a href="#veladores">Veladores</a></li>
 <li><a href="#iluminacion-apliques-de-pared">Iluminacion — Apliques de Pared</a></li>
-<li><a href="#calefactores-falabella">Calefactores — Falabella</a></li>
-<li><a href="#cortinas-ikea-chile">Cortinas — IKEA Chile</a></li>
-<li><a href="#cocina-tramontina-ikea">Cocina — Tramontina + IKEA</a></li>
+<li><a href="#calefactores">Calefactores</a></li>
+<li><a href="#cortinas">Cortinas</a></li>
+<li><a href="#cafetera-precios-verificados">Cafetera — Precios verificados</a></li>
+<li><a href="#cocina-tramontina-ikea-precios-verificados">Cocina — Tramontina + IKEA (precios verificados)</a></li>
+<li><a href="#tv-y-electronica-precios-verificados">TV y Electronica — Precios verificados</a></li>
+<li><a href="#bano-y-personal-precios-verificados">Bano y Personal — Precios verificados</a></li>
 <li><a href="#textiles-3-niveles-de-calidad">Textiles — 3 Niveles de Calidad</a></li>
-<li><a href="#bano-ikea-chile">Bano — IKEA Chile</a></li>
-<li><a href="#electrodomesticos-falabella-sodimac">Electrodomesticos — Falabella / Sodimac</a></li>
+<li><a href="#perchas">Perchas</a></li>
+<li><a href="#alfombras">Alfombras</a></li>
 <li><a href="#otros-items">Otros Items</a></li>
 </ul>
     </aside>
